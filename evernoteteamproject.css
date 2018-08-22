@@ -38,3 +38,10 @@ body section.signup div.desktop_text > button {
   margin: 2vw 0;
   padding: 2vw;
 }
+
+body section.percent {
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
