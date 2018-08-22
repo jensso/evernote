@@ -42,7 +42,7 @@ body section.signup div.desktop_text button {
 }
 
 body section.percent {
-  height: 50vw;
+  height: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,17 +62,18 @@ body section.percent div.percent_text h3, body section.percent div.percent_text 
 }
 
 body section.percent div.percent_text h3 {
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 body section.percent div.percent_text p {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 body section.percent div.percent_text button {
-  padding: 2vw;
+  padding: 1vw 2vw;
   background: green;
   color: white;
   border: none;
   font-weight: 700;
+  border-radius: 0.5vw;
 }
