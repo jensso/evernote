@@ -1,0 +1,14 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: white;
+  font {
+    size: 2.5vw;
+    familiy: monospace;
+    list-style-type: none;
+  }
+  li { width: 20vw;
+
+  }
+}
