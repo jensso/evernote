@@ -77,3 +77,12 @@ body section.percent div.percent_text button {
   font-weight: 700;
   border-radius: 0.5vw;
 }
+
+body section.brain {
+  height: 60vw;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
