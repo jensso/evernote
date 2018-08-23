@@ -1,0 +1,70 @@
+nav {
+  height: 10vw;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav li {
+  height: 10vw;
+  list-style: none;
+  display: inline-block;
+}
+
+nav li:nth-child(1) button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  margin-top: 4vw;
+  width: 15vw;
+  font-size: 1.22vw;
+}
+
+nav li:nth-child(1) button:hover {
+  color: green;
+}
+
+nav li:nth-child(1) button i {
+  margin-right: 1vw;
+}
+
+nav li .normalbtn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  margin-top: 4vw;
+  width: 10vw;
+  font-size: 1.22vw;
+}
+
+nav li .normalbtn:hover {
+  color: green;
+}
+
+nav li:nth-child(6) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 17vw;
+  font-size: 1vw;
+}
+
+nav li:nth-child(6) button {
+  width: 5vw;
+  background: none;
+  color: green;
+  cursor: pointer;
+  border-color: green;
+  border-style: solid;
+  margin-top: 4vw;
+}
+
+nav li:nth-child(6) button:hover {
+  color: rgba(0, 128, 0, 0.5);
+}
+
+nav li:nth-child(6) button:first-of-type {
+  border: none;
+}
+/*# sourceMappingURL=evernoteteamproject.css.map */

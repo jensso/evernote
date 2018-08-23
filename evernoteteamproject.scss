@@ -1,0 +1,66 @@
+nav {
+    height: 10vw;
+    background: white;
+    display: flex;
+
+    
+    li {
+        height:10vw ;
+    
+        list-style: none;
+        display: inline-block;
+
+        &:nth-child(1){ 
+                button {
+                    &:hover {
+                        color: green;
+                      }
+                    
+                    cursor: pointer;
+                    border: none;
+                    background: transparent;
+                    margin-top: 4vw;
+                    width: 15vw;
+                    font-size: 1.22vw; 
+                        i{
+                        margin-right: 1vw;
+                        }
+        } 
+    }
+    .normalbtn{
+     &:hover {
+     color: green;
+          }
+        cursor: pointer;
+        border: none;
+        background:transparent;
+        margin-top: 4vw;
+        width:10vw;
+        font-size: 1.22vw; 
+    }
+      &:nth-child(6){
+        flex-grow: 1;
+        margin-left: 17vw;
+        font-size: 1vw;
+
+
+      button{
+        &:hover {
+            color:rgba($color: green, $alpha: 0.5);
+                 }   
+      width: 5vw;
+      background:none;
+      color: green;
+      cursor: pointer;
+      border-color: green;
+      border-style: solid;
+      margin-top: 4vw;
+      &:first-of-type{
+      border: none;
+      }
+    }
+}
+
+}
+   
+}
