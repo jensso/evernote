@@ -124,7 +124,81 @@ body {
       }
     }
 
+// ======================================================
 
+    section.wave {
+      height: 90vw;
+      text-align: center;
+
+
+
+
+      div.wave_img {
+        margin: 5vw;
+      }
+
+
+      div.wave_text {
+        text-align: center;
+        line-height: 2.5;
+        letter-spacing: 0.1vw;
+        font-family: Arial, Helvetica, sans-serif;
+
+
+        h1 {
+          font-size: 3vw;
+        }
+
+        p {
+          font-size: 1.8vw;
+        }
+      }
+
+
+      div.kopf {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        margin: 5vw auto;
+
+        div.kopf_text {
+          width: 40vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+
+          h3 {
+            font-size: 3vw;
+            font-weight: 200;
+            color: lighten(green, 10%);
+          }
+
+          p {
+            font-size: 1.8vw;
+            font-weight: 200;
+            color: lighten(black, 15%);
+          }
+
+          a {
+            font-size: 1.2vw;
+            color: lighten(green, 3%);
+            font-weight: 700;
+            text-decoration: none;
+          }
+        }
+
+
+        div.kopf_img {
+          width: 40vw;
+        }
+      }
+
+
+    }
+
+// =============================================================
 
 }
 

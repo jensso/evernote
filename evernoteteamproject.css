@@ -119,3 +119,66 @@ body section.brain div.brain_text div {
   line-height: 1.6;
   color: #737373;
 }
+
+body section.wave {
+  height: 90vw;
+  text-align: center;
+}
+
+body section.wave div.wave_img {
+  margin: 5vw;
+}
+
+body section.wave div.wave_text {
+  text-align: center;
+  line-height: 2.5;
+  letter-spacing: 0.1vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body section.wave div.wave_text h1 {
+  font-size: 3vw;
+}
+
+body section.wave div.wave_text p {
+  font-size: 1.8vw;
+}
+
+body section.wave div.kopf {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 5vw auto;
+}
+
+body section.wave div.kopf div.kopf_text {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body section.wave div.kopf div.kopf_text h3 {
+  font-size: 3vw;
+  font-weight: 200;
+  color: #00b300;
+}
+
+body section.wave div.kopf div.kopf_text p {
+  font-size: 1.8vw;
+  font-weight: 200;
+  color: #262626;
+}
+
+body section.wave div.kopf div.kopf_text a {
+  font-size: 1.2vw;
+  color: #008f00;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+body section.wave div.kopf div.kopf_img {
+  width: 40vw;
+}
