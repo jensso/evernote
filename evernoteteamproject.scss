@@ -127,7 +127,6 @@ body {
 // ======================================================
 
     section.wave {
-      height: 90vw;
       text-align: center;
 
 
@@ -135,6 +134,7 @@ body {
 
       div.wave_img {
         margin: 5vw;
+        margin-top: 10vw;
       }
 
 
@@ -160,6 +160,8 @@ body {
         justify-content: space-between;
         width: 90vw;
         margin: 5vw auto;
+        line-height: 1.6;
+        letter-spacing: 0.05vw;
 
         div.kopf_text {
           width: 40vw;
@@ -195,6 +197,111 @@ body {
         }
       }
 
+
+
+      div.premium {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        margin: 10vw auto;
+        line-height: 1.6;
+        letter-spacing: 0.05vw;
+        margin-bottom: 15vw;
+
+        div.premium_text {
+          width: 40vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+
+          h3 {
+            font-size: 3vw;
+            font-weight: 200;
+            color: lighten(green, 10%);
+          }
+
+          p {
+            font-size: 1.8vw;
+            font-weight: 200;
+            color: lighten(black, 15%);
+          }
+
+          a {
+            font-size: 1.2vw;
+            color: lighten(green, 3%);
+            font-weight: 700;
+            text-decoration: none;
+          }
+        }
+
+
+        div.premium_img {
+          width: 40vw;
+        }
+      }
+
+
+
+      div.business {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        margin: 10vw auto;
+        line-height: 1.6;
+        letter-spacing: 0.05vw;
+
+        div.business_text {
+          width: 40vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: left;
+          font-family: Arial, Helvetica, sans-serif;
+
+          h3 {
+            font-size: 3vw;
+            font-weight: 200;
+            color: lighten(green, 10%);
+          }
+
+          p {
+            font-size: 1.8vw;
+            font-weight: 200;
+            color: lighten(black, 15%);
+          }
+
+          a {
+            font-size: 1.2vw;
+            color: lighten(green, 3%);
+            font-weight: 700;
+            text-decoration: none;
+          }
+        }
+
+
+        div.business_img {
+          width: 40vw;
+        }
+      }
+
+
+      div.compare {
+        text-align: center;
+        margin-bottom: 5vw;
+
+        button {
+          font-family: Arial, Helvetica, sans-serif;
+          background: lighten(green, 5%);
+          color: white;
+          font-size: 1.1vw;
+          border-radius: 0.5vw;
+          padding: 1.2vw;
+          font-weight: 700;
+          border: none;
+        }
+      }
 
     }
 
