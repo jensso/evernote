@@ -10,6 +10,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  color: green;
   margin-left: 4vw;
   font-size: 2.5vw;
   font-family: arial;
@@ -17,7 +18,7 @@
 }
 
 .div_footer_top h2 img {
-  margin: 0 auto;
+  margin: 0.5vw 1vw;
   width: 2.5vw;
   height: 2.5vw;
 }
@@ -31,13 +32,50 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 20%;
+}
+
+.div_footer_top ul h6 {
+  margin-left: 1vw;
+  margin-bottom: 2vw;
+}
+
+.div_footer_top ul button {
+  background-color: white;
+  border-color: green;
+  color: green;
+  margin: 2vw 4vw;
+  width: 8vw;
+  height: 4vw;
+  text-align: center;
+}
+
+.div_footer_top ul button:hover {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
 }
 
 .div_footer_top ul li {
   list-style-type: none;
-  margin-left: 2vw;
+  margin-left: 1vw;
   margin-bottom: 2vw;
   font-family: arial;
   font-weight: lighter;
+}
+
+.div_footer_bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div_footer_bottom select {
+  width: 10vw;
+  padding: 1vw;
+  margin-left: 1vw;
+  margin-right: 50vw;
+  border-color: green;
+}
+
+.div_footer_bottom i {
+  margin: 1vw auto;
 }
