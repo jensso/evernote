@@ -11,16 +11,15 @@
   align-items: flex-start;
   justify-content: center;
   color: green;
-  margin-left: 4vw;
+  margin: 1.5vw;
   font-size: 2.5vw;
   font-family: arial;
   font-weight: lighter;
 }
 
 .div_footer_top h2 img {
-  margin: 0.5vw 1vw;
-  width: 2.5vw;
-  height: 2.5vw;
+  width: 5vw;
+  height: 5vw;
 }
 
 .div_footer_top hr {
@@ -107,4 +106,24 @@ i {
 
 .footnote li a:hover {
   color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .div_footer_top, .div_footer_bottom, .footnote {
+    display: block;
+    background-color: black;
+    color: white;
+    float: left;
+    width: 100%;
+  }
+  .div_footer_top > ul > button {
+    width: 50%;
+    height: 8vw;
+    font-size: 1.5vw;
+  }
+  .div_footer_top > h2 {
+    color: green;
+    font-size: 6vw;
+    text-shadow: 0.3vw 0.3vw white;
+  }
 }
