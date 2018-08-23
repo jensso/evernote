@@ -270,7 +270,7 @@ body section.wave div.business div.business_img {
 
 body section.wave div.compare {
   text-align: center;
-  margin-bottom: 5vw;
+  margin: 5vw 0;
 }
 
 body section.wave div.compare button {
@@ -279,7 +279,51 @@ body section.wave div.compare button {
   color: white;
   font-size: 1.1vw;
   border-radius: 0.5vw;
-  padding: 1.2vw;
+  padding: 1.4vw;
   font-weight: 700;
   border: none;
+}
+
+body div.heart {
+  text-align: center;
+  margin: 5vw;
+  margin-top: 20vw;
+}
+
+body section.animation {
+  height: 40vw;
+}
+
+body section.animation div.animation_img {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body section.animation div.animation_img button {
+  border: none;
+  opacity: 0.4;
+  background: white;
+}
+
+body section.animation div.animation_img button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+body section.animation div.animation_text {
+  width: 70vw;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8vw;
+  font-weight: 200;
+  line-height: 1.8;
+  letter-spacing: 0.1vw;
+}
+
+body section.animation div.animation_text p {
+  margin: 5vw;
 }
