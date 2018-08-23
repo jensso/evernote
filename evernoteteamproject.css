@@ -76,6 +76,35 @@
   border-color: green;
 }
 
-.div_footer_bottom i {
+i {
   margin: 1vw auto;
+}
+
+.footnote {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footnote hr {
+  width: 80%;
+  color: green;
+}
+
+.footnote span {
+  flex-grow: 1;
+}
+
+.footnote li {
+  color: silver;
+  margin: 2.5vw;
+  list-style-type: none;
+}
+
+.footnote li a {
+  text-decoration: none;
+  color: silver;
+}
+
+.footnote li a:hover {
+  color: green;
 }

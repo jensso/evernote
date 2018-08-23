@@ -1,6 +1,5 @@
 .div_footer_top {
   display: flex;
-  // flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -20,12 +19,12 @@
       margin: 0.5vw 1vw;
       width: 2.5vw;
       height: 2.5vw;
-    }
-  }
+        }
+      }
   hr {
     color: green;
     width: 90%;
-  }
+      }
   ul {
       display: flex;
       flex-direction: column;
@@ -69,8 +68,30 @@
         margin-right: 50vw;
         border-color: green;
       }
-
+    }
       i {
         margin: 1vw auto;
       }
-    }
+    .footnote {
+      display: flex;
+      justify-content: flex-end;
+        hr {
+          width: 80%;
+          color: green;
+        }
+          span {
+            flex-grow: 1;
+          }
+          li {
+            color: silver;
+            margin: 2.5vw;
+            list-style-type: none;
+            a {
+            text-decoration: none;
+            color: silver;
+            &:hover {
+              color: green;
+            }
+          }
+        }
+      }
