@@ -284,46 +284,599 @@ body section.wave div.compare button {
   border: none;
 }
 
+body section.wave div.compare button:hover {
+  cursor: pointer;
+  background: #00cd00;
+}
+
 body div.heart {
   text-align: center;
   margin: 5vw;
   margin-top: 20vw;
 }
 
+@keyframes one {
+  -5% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 1;
+  }
+  11% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 0.4;
+  }
+  28% {
+    opacity: 0.4;
+  }
+  33% {
+    opacity: 0.4;
+  }
+  38% {
+    opacity: 0.4;
+  }
+  43% {
+    opacity: 0.4;
+  }
+  48% {
+    opacity: 0.4;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  71% {
+    opacity: 0.4;
+  }
+  78% {
+    opacity: 0.4;
+  }
+  83% {
+    opacity: 0.4;
+  }
+  89% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes two {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  11% {
+    opacity: 0.4;
+  }
+  16% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.4;
+  }
+  38% {
+    opacity: 0.4;
+  }
+  43% {
+    opacity: 0.4;
+  }
+  48% {
+    opacity: 0.4;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  71% {
+    opacity: 0.4;
+  }
+  78% {
+    opacity: 0.4;
+  }
+  83% {
+    opacity: 0.4;
+  }
+  89% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes three {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  11% {
+    opacity: 0.4;
+  }
+  16% {
+    opacity: 0.4;
+  }
+  22% {
+    opacity: 0.4;
+  }
+  28% {
+    opacity: 0.4;
+  }
+  33% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  71% {
+    opacity: 0.4;
+  }
+  78% {
+    opacity: 0.4;
+  }
+  83% {
+    opacity: 0.4;
+  }
+  89% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes four {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  11% {
+    opacity: 0.4;
+  }
+  16% {
+    opacity: 0.4;
+  }
+  22% {
+    opacity: 0.4;
+  }
+  28% {
+    opacity: 0.4;
+  }
+  33% {
+    opacity: 0.4;
+  }
+  38% {
+    opacity: 0.4;
+  }
+  43% {
+    opacity: 0.4;
+  }
+  48% {
+    opacity: 0.4;
+  }
+  55% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 0.4;
+  }
+  78% {
+    opacity: 0.4;
+  }
+  83% {
+    opacity: 0.4;
+  }
+  89% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes five {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  11% {
+    opacity: 0.4;
+  }
+  16% {
+    opacity: 0.4;
+  }
+  22% {
+    opacity: 0.4;
+  }
+  28% {
+    opacity: 0.4;
+  }
+  33% {
+    opacity: 0.4;
+  }
+  38% {
+    opacity: 0.4;
+  }
+  43% {
+    opacity: 0.4;
+  }
+  48% {
+    opacity: 0.4;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  71% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 1;
+  }
+  83% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 0.4;
+  }
+  95% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes six {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.4;
+  }
+  11% {
+    opacity: 0.4;
+  }
+  16% {
+    opacity: 0.4;
+  }
+  22% {
+    opacity: 0.4;
+  }
+  28% {
+    opacity: 0.4;
+  }
+  33% {
+    opacity: 0.4;
+  }
+  38% {
+    opacity: 0.4;
+  }
+  43% {
+    opacity: 0.4;
+  }
+  48% {
+    opacity: 0.4;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  65% {
+    opacity: 0.4;
+  }
+  71% {
+    opacity: 0.4;
+  }
+  78% {
+    opacity: 0.4;
+  }
+  83% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes click {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  5% {
+    opacity: 1;
+    display: block;
+  }
+  11% {
+    opacity: 1;
+    display: block;
+  }
+  16% {
+    opacity: 1;
+    display: block;
+  }
+  22% {
+    opacity: 0.4;
+    display: block;
+  }
+  28% {
+    opacity: 0.4;
+    display: block;
+  }
+  33% {
+    opacity: 0.4;
+    display: block;
+  }
+  38% {
+    opacity: 0.4;
+    display: block;
+  }
+  43% {
+    opacity: 0.4;
+    display: block;
+  }
+  48% {
+    opacity: 0.4;
+    display: block;
+  }
+  55% {
+    opacity: 0.4;
+    display: block;
+  }
+  60% {
+    opacity: 0.4;
+    display: block;
+  }
+  65% {
+    opacity: 0.4;
+    display: block;
+  }
+  71% {
+    opacity: 0.4;
+    display: block;
+  }
+  78% {
+    opacity: 0.4;
+    display: block;
+  }
+  83% {
+    opacity: 0.4;
+    display: block;
+  }
+  89% {
+    opacity: 0.4;
+    display: block;
+  }
+  95% {
+    opacity: 0.4;
+    display: block;
+  }
+  100% {
+    opacity: 0.4;
+    display: block;
+  }
+}
+
 body section.animation {
-  height: 40vw;
-}
-
-body section.animation div.animation_img {
-  width: 90vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  display: grid;
+  justify-content: center;
   align-items: center;
-}
-
-body section.animation div.animation_img button {
-  border: none;
-  opacity: 0.4;
-  background: white;
-}
-
-body section.animation div.animation_img button:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-body section.animation div.animation_text {
-  width: 70vw;
-  margin: 0 auto;
   text-align: center;
+  grid-template: repeat(15, auto)/6vw 4vw 10vw 9vw 5vw 6.5vw 7vw 10vw 4vw 6vw;
+  grid-gap: 0 2.5vw;
+  grid-template-areas: 'business business verge webby forbes forbes cloud manuel manuel manuel' 'business business verge webby forbes forbes cloud manuel manuel manuel' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2';
+}
+
+body section.animation button.animation_img1 {
+  grid-area: business;
+}
+
+body section.animation button.animation_img2 {
+  grid-area: verge;
+}
+
+body section.animation button.animation_img3 {
+  grid-area: webby;
+}
+
+body section.animation button.animation_img4 {
+  grid-area: forbes;
+}
+
+body section.animation button.animation_img5 {
+  grid-area: cloud;
+}
+
+body section.animation button.animation_img6 {
+  grid-area: manuel;
+}
+
+body section.animation p.text1 {
+  grid-area: text1;
+}
+
+body section.animation p.text2 {
+  grid-area: text2;
+}
+
+body section.animation p.text3 {
+  grid-area: text3;
+}
+
+body section.animation p.text4 {
+  grid-area: text4;
+}
+
+body section.animation p.text5 {
+  grid-area: text5;
+}
+
+body section.animation p.text6 {
+  grid-area: text6;
+}
+
+body section.animation div.empty1 {
+  grid-area: empty1;
+}
+
+body section.animation div.empty2 {
+  grid-area: empty2;
+}
+
+body section.animation button:nth-of-type(1) {
+  animation: one 10s linear infinite;
+}
+
+body section.animation button:nth-of-type(2) {
+  animation: two 10s linear infinite;
+}
+
+body section.animation button:nth-of-type(3) {
+  animation: three 10s linear infinite;
+}
+
+body section.animation button:nth-of-type(4) {
+  animation: four 10s linear infinite;
+}
+
+body section.animation button:nth-of-type(5) {
+  animation: five 10s linear infinite;
+}
+
+body section.animation button:nth-of-type(6) {
+  animation: six 10s linear infinite;
+}
+
+body section.animation p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.8vw;
   font-weight: 200;
   line-height: 1.8;
   letter-spacing: 0.1vw;
+  display: none;
+  position: relative;
+  top: 5vw;
+  left: 0;
 }
 
-body section.animation div.animation_text p {
-  margin: 5vw;
+body section.animation button {
+  border: none;
+  opacity: 0.4;
+  background: white;
+}
+
+body section.animation button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+body section.animation button:nth-of-type(1):focus ~ p:nth-of-type(1) {
+  display: block;
+}
+
+body section.animation button:nth-of-type(2):focus ~ p:nth-of-type(2) {
+  display: block;
+}
+
+body section.animation button:nth-of-type(3):focus ~ p:nth-of-type(3) {
+  display: block;
+}
+
+body section.animation button:nth-of-type(4):focus ~ p:nth-of-type(4) {
+  display: block;
+}
+
+body section.animation button:nth-of-type(5):focus ~ p:nth-of-type(5) {
+  display: block;
+}
+
+body section.animation button:nth-of-type(6):focus ~ p:nth-of-type(6) {
+  display: block;
+}
+
+body div.example {
+  margin: 20vw;
+  background: lime;
 }
