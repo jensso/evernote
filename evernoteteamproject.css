@@ -1,20 +1,145 @@
+.div_footer_top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.div_footer_top h2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: green;
+  margin: 1.5vw;
+  font-size: 2.5vw;
+  font-family: arial;
+  font-weight: lighter;
+}
+
+.div_footer_top h2 img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.div_footer_top hr {
+  color: green;
+  width: 90%;
+}
+
+.div_footer_top ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.div_footer_top ul h6 {
+  margin-left: 1vw;
+  margin-bottom: 2vw;
+}
+
+.div_footer_top ul button {
+  background-color: white;
+  border-color: green;
+  color: green;
+  margin: 2vw 4vw;
+  width: 8vw;
+  height: 4vw;
+  text-align: center;
+}
+
+.div_footer_top ul button:hover {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+}
+
+.div_footer_top ul li {
+  list-style-type: none;
+  margin-left: 1vw;
+  margin-bottom: 2vw;
+  font-family: arial;
+  font-weight: lighter;
+}
+
+.div_footer_bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div_footer_bottom select {
+  width: 10vw;
+  padding: 1vw;
+  margin-left: 1vw;
+  margin-right: 50vw;
+  border-color: green;
+}
+
+i {
+  margin: 1vw auto;
+}
+
+.footnote {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footnote hr {
+  width: 80%;
+  color: green;
+}
+
+.footnote span {
+  flex-grow: 1;
+}
+
+.footnote li {
+  color: silver;
+  margin: 2.5vw;
+  list-style-type: none;
+}
+
+.footnote li a {
+  text-decoration: none;
+  color: silver;
+}
+
+.footnote li a:hover {
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .div_footer_top, .div_footer_bottom, .footnote {
+    display: block;
+    background-color: black;
+    color: white;
+    float: left;
+    width: 100%;
+  }
+  .div_footer_top > ul > button {
+    width: 50%;
+    height: 8vw;
+    font-size: 1.5vw;
+  }
+  .div_footer_top > h2 {
+    color: green;
+    font-size: 6vw;
+    text-shadow: 0.3vw 0.3vw white;
+  }
+}
+
 nav {
   position: fixed;
   margin-left: 12vw;
   margin-right: 10vw;
   height: 8vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @media screen and (max-width: 500px) {
   nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -68,9 +193,7 @@ nav div .normalbtn i {
 }
 
 nav div:last-of-type {
-  -webkit-box-flex: 0.8;
-      -ms-flex-positive: 0.8;
-          flex-grow: 0.8;
+  flex-grow: 0.8;
   padding-top: 2.5vw;
 }
 
@@ -108,8 +231,7 @@ nav .dropdown-content1 {
   display: none;
   position: absolute;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -141,8 +263,7 @@ nav .dropdown-content2 {
   display: none;
   position: absolute;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -162,4 +283,3 @@ nav .dropdown-content2 a:hover {
   background-color: #00a82d;
   color: white;
 }
-/*# sourceMappingURL=evernoteteamproject.css.map */
