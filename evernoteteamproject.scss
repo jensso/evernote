@@ -731,9 +731,11 @@ body {
     }
 
 }
-
-
-.div_footer_top {
+footer > hr {
+    color: green;
+    width: 90%;
+}
+.div_footer_part1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -797,7 +799,7 @@ body {
         }
       }
     }
-    .div_footer_bottom {
+    .div_footer_part2 {
       display: flex;
       justify-content: flex-end;
       select {
@@ -814,10 +816,6 @@ body {
     .footnote {
       display: flex;
       justify-content: flex-end;
-        hr {
-          width: 80%;
-          color: green;
-        }
           span {
             flex-grow: 1;
           }
@@ -842,6 +840,10 @@ body {
               color: white;
               float: left;
               width: 100%;
+              hr {
+                width: 90%;
+                color: green;
+              }
               }
             .div_footer_top  > ul > button {
                 width: 50%;

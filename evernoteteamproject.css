@@ -875,7 +875,12 @@ body div.example {
   background: lime;
 }
 
-.div_footer_top {
+footer > hr {
+  color: green;
+  width: 90%;
+}
+
+.div_footer_part1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -883,7 +888,7 @@ body div.example {
   background: white;
 }
 
-.div_footer_top h2 {
+.div_footer_part1 h2 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -894,28 +899,28 @@ body div.example {
   font-weight: lighter;
 }
 
-.div_footer_top h2 img {
+.div_footer_part1 h2 img {
   width: 5vw;
   height: 5vw;
 }
 
-.div_footer_top hr {
+.div_footer_part1 hr {
   color: green;
   width: 90%;
 }
 
-.div_footer_top ul {
+.div_footer_part1 ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.div_footer_top ul h6 {
+.div_footer_part1 ul h6 {
   margin-left: 1vw;
   margin-bottom: 2vw;
 }
 
-.div_footer_top ul button {
+.div_footer_part1 ul button {
   background-color: white;
   border-color: green;
   color: green;
@@ -925,14 +930,14 @@ body div.example {
   text-align: center;
 }
 
-.div_footer_top ul button:hover {
+.div_footer_part1 ul button:hover {
   background-color: green;
   color: white;
   border: 1px solid green;
   cursor: pointer;
 }
 
-.div_footer_top ul li {
+.div_footer_part1 ul li {
   list-style-type: none;
   margin-left: 1vw;
   margin-bottom: 2vw;
@@ -940,17 +945,17 @@ body div.example {
   font-weight: lighter;
 }
 
-.div_footer_top ul li:hover {
+.div_footer_part1 ul li:hover {
   color: green;
   cursor: pointer;
 }
 
-.div_footer_bottom {
+.div_footer_part2 {
   display: flex;
   justify-content: flex-end;
 }
 
-.div_footer_bottom select {
+.div_footer_part2 select {
   width: 10vw;
   padding: 1vw;
   margin-left: 1vw;
@@ -965,11 +970,6 @@ i {
 .footnote {
   display: flex;
   justify-content: flex-end;
-}
-
-.footnote hr {
-  width: 80%;
-  color: green;
 }
 
 .footnote span {
@@ -998,6 +998,10 @@ i {
     color: white;
     float: left;
     width: 100%;
+  }
+  .div_footer_top hr, .div_footer_bottom hr, .footnote hr {
+    width: 90%;
+    color: green;
   }
   .div_footer_top > ul > button {
     width: 50%;
