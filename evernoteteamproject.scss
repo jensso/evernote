@@ -453,72 +453,71 @@ body {
 
 
 
-        // @each $num, $button, $text, $area1, $area2 in (1, button, p, business, text1),
-        //  (2, button, p, verge, text2),
-        //   (3, button, p, webby, text3), (4, button, p, forbes, text4),
-        //    (5, button, p, cloud, text5), (6, button, p, manuel, text6) {
-        //     @if #{$button} == button {
-        //       button:nth-of-type(#{$num}) {
-        //         grid-area: $area1;
-        //         }
-        //     } @else if #{$text} == p {
-        //         p:nth-of-type(#{$num}) {
-        //             grid-area: $area2;
-        //             }
-        //           }
-        //
-        //   }
+        @each $num, $button, $text, $area1, $area2 in (1, button, p, business, text1),
+         (2, button, p, verge, text2),
+          (3, button, p, webby, text3), (4, button, p, forbes, text4),
+           (5, button, p, cloud, text5), (6, button, p, manuel, text6) {
+
+              #{$button}:nth-of-type(#{$num}) {
+                grid-area: $area1;
+                }
+
+
+                #{$text}:nth-of-type(#{$num}) {
+                    grid-area: $area2;
+                    }
+          }
 
 
 
 
-      button.animation_img1 {
-        grid-area: business;
-      }
-
-      button.animation_img2 {
-        grid-area: verge;
-      }
-
-      button.animation_img3 {
-        grid-area: webby;
-      }
-
-      button.animation_img4 {
-        grid-area: forbes;
-      }
-
-      button.animation_img5 {
-        grid-area: cloud;
-      }
-
-      button.animation_img6 {
-        grid-area: manuel;
-      }
-
-      p.text1 {
-        grid-area: text1;
-      }
-
-      p.text2 {
-        grid-area: text2;
-      }
-
-      p.text3 {
-        grid-area: text3;
-      }
-
-      p.text4 {
-        grid-area: text4;
-      }
-
-      p.text5 {
-        grid-area: text5;
-      }
-
-      p.text6 {
-        grid-area: text6;
-      }
+      // button.animation_img1 {
+      //   grid-area: business;
+      // }
+      //
+      // button.animation_img2 {
+      //   grid-area: verge;
+      // }
+      //
+      // button.animation_img3 {
+      //   grid-area: webby;
+      // }
+      //
+      // button.animation_img4 {
+      //   grid-area: forbes;
+      // }
+      //
+      // button.animation_img5 {
+      //   grid-area: cloud;
+      // }
+      //
+      // button.animation_img6 {
+      //   grid-area: manuel;
+      // }
+      //
+      // p.text1 {
+      //   grid-area: text1;
+      // }
+      //
+      // p.text2 {
+      //   grid-area: text2;
+      // }
+      //
+      // p.text3 {
+      //   grid-area: text3;
+      // }
+      //
+      // p.text4 {
+      //   grid-area: text4;
+      // }
+      //
+      // p.text5 {
+      //   grid-area: text5;
+      // }
+      //
+      // p.text6 {
+      //   grid-area: text6;
+      // }
 
       div.empty1 {
         grid-area: empty1;

@@ -383,51 +383,51 @@ body section.animation {
   grid-template-areas: 'business business verge webby forbes forbes cloud manuel manuel manuel' 'business business verge webby forbes forbes cloud manuel manuel manuel' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2';
 }
 
-body section.animation button.animation_img1 {
+body section.animation button:nth-of-type(1) {
   grid-area: business;
 }
 
-body section.animation button.animation_img2 {
-  grid-area: verge;
-}
-
-body section.animation button.animation_img3 {
-  grid-area: webby;
-}
-
-body section.animation button.animation_img4 {
-  grid-area: forbes;
-}
-
-body section.animation button.animation_img5 {
-  grid-area: cloud;
-}
-
-body section.animation button.animation_img6 {
-  grid-area: manuel;
-}
-
-body section.animation p.text1 {
+body section.animation p:nth-of-type(1) {
   grid-area: text1;
 }
 
-body section.animation p.text2 {
+body section.animation button:nth-of-type(2) {
+  grid-area: verge;
+}
+
+body section.animation p:nth-of-type(2) {
   grid-area: text2;
 }
 
-body section.animation p.text3 {
+body section.animation button:nth-of-type(3) {
+  grid-area: webby;
+}
+
+body section.animation p:nth-of-type(3) {
   grid-area: text3;
 }
 
-body section.animation p.text4 {
+body section.animation button:nth-of-type(4) {
+  grid-area: forbes;
+}
+
+body section.animation p:nth-of-type(4) {
   grid-area: text4;
 }
 
-body section.animation p.text5 {
+body section.animation button:nth-of-type(5) {
+  grid-area: cloud;
+}
+
+body section.animation p:nth-of-type(5) {
   grid-area: text5;
 }
 
-body section.animation p.text6 {
+body section.animation button:nth-of-type(6) {
+  grid-area: manuel;
+}
+
+body section.animation p:nth-of-type(6) {
   grid-area: text6;
 }
 
