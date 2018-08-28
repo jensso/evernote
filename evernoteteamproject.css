@@ -929,6 +929,7 @@ body div.example {
   background-color: green;
   color: white;
   border: 1px solid green;
+  cursor: pointer;
 }
 
 .div_footer_top ul li {
@@ -937,6 +938,11 @@ body div.example {
   margin-bottom: 2vw;
   font-family: arial;
   font-weight: lighter;
+}
+
+.div_footer_top ul li:hover {
+  color: green;
+  cursor: pointer;
 }
 
 .div_footer_bottom {

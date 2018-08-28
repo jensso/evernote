@@ -779,6 +779,7 @@ body {
           background-color: green;
           color: white;
           border: 1px solid green;
+          cursor: pointer;
         }
       }
       li {
@@ -788,6 +789,10 @@ body {
         font: {
         family: arial;
         weight: lighter;
+          }
+          &:hover {
+            color: green;
+            cursor: pointer;
           }
         }
       }
