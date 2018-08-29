@@ -1,4 +1,134 @@
-body section.signup {
+body nav {
+  margin-top: -1vw;
+  padding-bottom: 2vw;
+  margin-right: 2vw;
+  background: white;
+  position: fixed;
+  width: 100%;
+  height: 8vw;
+  display: flex;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  body nav {
+    flex-direction: column;
+  }
+}
+
+body nav div {
+  padding-top: 3vw;
+  text-align: center;
+  list-style: none;
+  margin-left: 4vw;
+}
+
+body nav div button {
+  font-size: 1vw;
+  width: auto;
+}
+
+body nav div:first-of-type button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1.5Vw;
+}
+
+body nav div:first-of-type button i {
+  font-size: 2vw;
+  margin-right: 1vw;
+}
+
+body nav div:first-of-type button:hover {
+  color: #00a82d;
+}
+
+body nav div .normalbtn {
+  margin-top: 0.8vw;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+}
+
+body nav div .normalbtn:hover {
+  color: #00a82d;
+}
+
+body nav div .normalbtn i {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+body nav div:last-of-type {
+  flex-grow: 0.8;
+  padding-top: 2.5vw;
+}
+
+body nav div:last-of-type span {
+  font-size: 1vw;
+}
+
+body nav div:last-of-type button {
+  margin-left: 1vw;
+  padding: 5px 30px;
+  background: transparent;
+  color: #00a82d;
+  cursor: pointer;
+  border: 2px solid #00a82d;
+  border-radius: 3px;
+}
+
+body nav div:last-of-type button:hover {
+  color: rgba(0, 168, 54, 0.5);
+  border-color: rgba(0, 168, 54, 0.5);
+}
+
+body nav div:last-of-type button:first-of-type {
+  border: none;
+}
+
+body nav .dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+
+body nav .dropdown-content1 {
+  position: absolute;
+  left: -1vw;
+  height: auto;
+  width: 11vw;
+  background: white;
+  display: none;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+body nav .dropdown-content1 a {
+  margin-top: 5px;
+  text-decoration: none;
+  height: 2vw;
+  color: #00a82d;
+  padding: 10px 20px;
+  display: block;
+  text-align: left;
+  border-radius: 3px;
+}
+
+body nav .dropdown-content1 a:hover {
+  background-color: #00a82d;
+  color: white;
+}
+
+body nav .dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+body nav section.signup {
   height: 50vw;
   width: 100%;
   background: green;
@@ -8,70 +138,70 @@ body section.signup {
   align-items: center;
 }
 
-body section.signup div.desktop_text {
+body nav section.signup div.desktop_text {
   line-height: 1.6;
   letter-spacing: 0.07vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body section.signup div.desktop_text > span {
+body nav section.signup div.desktop_text > span {
   font-size: 4vw;
   color: white;
   padding: 1vw 0;
 }
 
-body section.signup div.desktop_text > p {
+body nav section.signup div.desktop_text > p {
   font-size: 2vw;
   color: white;
   padding: 1vw 0;
 }
 
-body section.signup div.desktop_text > button {
+body nav section.signup div.desktop_text > button {
   font-size: 1vw;
   color: green;
   padding: 1vw 0;
 }
 
-body section.signup div.desktop_text button {
+body nav section.signup div.desktop_text button {
   padding: 1vw 2vw;
   border: none;
 }
 
-body section.signup div.desktop_text button:hover {
+body nav section.signup div.desktop_text button:hover {
   cursor: pointer;
   background: #cccccc;
 }
 
-body section.percent {
+body nav section.percent {
   height: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-body section.percent div {
+body nav section.percent div {
   margin: 0 2vw;
 }
 
-body section.percent div.percent_text {
+body nav section.percent div.percent_text {
   font-family: Tahoma, Geneva, sans-serif;
   line-height: 1.6;
   letter-spacing: 0.1vw;
 }
 
-body section.percent div.percent_text h3, body section.percent div.percent_text p {
+body nav section.percent div.percent_text h3, body nav section.percent div.percent_text p {
   margin: 2vw 0;
 }
 
-body section.percent div.percent_text h3 {
+body nav section.percent div.percent_text h3 {
   font-size: 3vw;
 }
 
-body section.percent div.percent_text p {
+body nav section.percent div.percent_text p {
   font-size: 1.5vw;
 }
 
-body section.percent div.percent_text button {
+body nav section.percent div.percent_text button {
   padding: 1vw 2vw;
   background: green;
   color: white;
@@ -81,12 +211,12 @@ body section.percent div.percent_text button {
   border-radius: 0.5vw;
 }
 
-body section.percent div.percent_text button:hover {
+body nav section.percent div.percent_text button:hover {
   cursor: pointer;
   background: #00b300;
 }
 
-body section.brain {
+body nav section.brain {
   height: 55vw;
   background: whitesmoke;
   display: flex;
@@ -95,17 +225,17 @@ body section.brain {
   align-items: center;
 }
 
-body section.brain h1 {
+body nav section.brain h1 {
   font-size: 4vw;
 }
 
-body section.brain div.brain_text {
+body nav section.brain div.brain_text {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
-body section.brain div.brain_text div {
+body nav section.brain div.brain_text div {
   width: 25vw;
   font-size: 2.3vw;
   letter-spacing: 0.1vw;
@@ -114,31 +244,31 @@ body section.brain div.brain_text div {
   color: #737373;
 }
 
-body section.wave {
+body nav section.wave {
   text-align: center;
 }
 
-body section.wave div.wave_img {
+body nav section.wave div.wave_img {
   margin: 5vw;
   margin-top: 10vw;
 }
 
-body section.wave div.wave_text {
+body nav section.wave div.wave_text {
   text-align: center;
   line-height: 2.5;
   letter-spacing: 0.1vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body section.wave div.wave_text h1 {
+body nav section.wave div.wave_text h1 {
   font-size: 3vw;
 }
 
-body section.wave div.wave_text p {
+body nav section.wave div.wave_text p {
   font-size: 1.8vw;
 }
 
-body section.wave div.kopf {
+body nav section.wave div.kopf {
   display: flex;
   justify-content: space-between;
   width: 90vw;
@@ -147,7 +277,7 @@ body section.wave div.kopf {
   letter-spacing: 0.05vw;
 }
 
-body section.wave div.kopf div.kopf_text {
+body nav section.wave div.kopf div.kopf_text {
   width: 40vw;
   display: flex;
   flex-direction: column;
@@ -156,30 +286,30 @@ body section.wave div.kopf div.kopf_text {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body section.wave div.kopf div.kopf_text h3 {
+body nav section.wave div.kopf div.kopf_text h3 {
   font-size: 3vw;
   font-weight: 200;
   color: #00b300;
 }
 
-body section.wave div.kopf div.kopf_text p {
+body nav section.wave div.kopf div.kopf_text p {
   font-size: 1.8vw;
   font-weight: 200;
   color: #262626;
 }
 
-body section.wave div.kopf div.kopf_text a {
+body nav section.wave div.kopf div.kopf_text a {
   font-size: 1.2vw;
   color: #008f00;
   font-weight: 700;
   text-decoration: none;
 }
 
-body section.wave div.kopf div.kopf_img {
+body nav section.wave div.kopf div.kopf_img {
   width: 40vw;
 }
 
-body section.wave div.premium {
+body nav section.wave div.premium {
   display: flex;
   justify-content: space-between;
   width: 90vw;
@@ -189,7 +319,7 @@ body section.wave div.premium {
   margin-bottom: 15vw;
 }
 
-body section.wave div.premium div.premium_text {
+body nav section.wave div.premium div.premium_text {
   width: 40vw;
   display: flex;
   flex-direction: column;
@@ -198,30 +328,30 @@ body section.wave div.premium div.premium_text {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body section.wave div.premium div.premium_text h3 {
+body nav section.wave div.premium div.premium_text h3 {
   font-size: 3vw;
   font-weight: 200;
   color: #00b300;
 }
 
-body section.wave div.premium div.premium_text p {
+body nav section.wave div.premium div.premium_text p {
   font-size: 1.8vw;
   font-weight: 200;
   color: #262626;
 }
 
-body section.wave div.premium div.premium_text a {
+body nav section.wave div.premium div.premium_text a {
   font-size: 1.2vw;
   color: #008f00;
   font-weight: 700;
   text-decoration: none;
 }
 
-body section.wave div.premium div.premium_img {
+body nav section.wave div.premium div.premium_img {
   width: 40vw;
 }
 
-body section.wave div.business {
+body nav section.wave div.business {
   display: flex;
   justify-content: space-between;
   width: 90vw;
@@ -230,7 +360,7 @@ body section.wave div.business {
   letter-spacing: 0.05vw;
 }
 
-body section.wave div.business div.business_text {
+body nav section.wave div.business div.business_text {
   width: 40vw;
   display: flex;
   flex-direction: column;
@@ -239,35 +369,35 @@ body section.wave div.business div.business_text {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body section.wave div.business div.business_text h3 {
+body nav section.wave div.business div.business_text h3 {
   font-size: 3vw;
   font-weight: 200;
   color: #00b300;
 }
 
-body section.wave div.business div.business_text p {
+body nav section.wave div.business div.business_text p {
   font-size: 1.8vw;
   font-weight: 200;
   color: #262626;
 }
 
-body section.wave div.business div.business_text a {
+body nav section.wave div.business div.business_text a {
   font-size: 1.2vw;
   color: #008f00;
   font-weight: 700;
   text-decoration: none;
 }
 
-body section.wave div.business div.business_img {
+body nav section.wave div.business div.business_img {
   width: 40vw;
 }
 
-body section.wave div.compare {
+body nav section.wave div.compare {
   text-align: center;
   margin: 5vw 0;
 }
 
-body section.wave div.compare button {
+body nav section.wave div.compare button {
   font-family: Arial, Helvetica, sans-serif;
   background: #009a00;
   color: white;
@@ -278,12 +408,12 @@ body section.wave div.compare button {
   border: none;
 }
 
-body section.wave div.compare button:hover {
+body nav section.wave div.compare button:hover {
   cursor: pointer;
   background: #00cd00;
 }
 
-body div.heart {
+body nav div.heart {
   text-align: center;
   margin: 5vw;
   margin-top: 20vw;
@@ -731,7 +861,7 @@ body div.heart {
   }
 }
 
-body section.animation {
+body nav section.animation {
   position: relative;
   width: 100%;
   display: grid;
@@ -743,87 +873,87 @@ body section.animation {
   grid-template-areas: 'business business verge webby forbes forbes cloud manuel manuel manuel' 'business business verge webby forbes forbes cloud manuel manuel manuel' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2';
 }
 
-body section.animation button.animation_img1 {
+body nav section.animation button.animation_img1 {
   grid-area: business;
 }
 
-body section.animation button.animation_img2 {
+body nav section.animation button.animation_img2 {
   grid-area: verge;
 }
 
-body section.animation button.animation_img3 {
+body nav section.animation button.animation_img3 {
   grid-area: webby;
 }
 
-body section.animation button.animation_img4 {
+body nav section.animation button.animation_img4 {
   grid-area: forbes;
 }
 
-body section.animation button.animation_img5 {
+body nav section.animation button.animation_img5 {
   grid-area: cloud;
 }
 
-body section.animation button.animation_img6 {
+body nav section.animation button.animation_img6 {
   grid-area: manuel;
 }
 
-body section.animation p.text1 {
+body nav section.animation p.text1 {
   grid-area: text1;
 }
 
-body section.animation p.text2 {
+body nav section.animation p.text2 {
   grid-area: text2;
 }
 
-body section.animation p.text3 {
+body nav section.animation p.text3 {
   grid-area: text3;
 }
 
-body section.animation p.text4 {
+body nav section.animation p.text4 {
   grid-area: text4;
 }
 
-body section.animation p.text5 {
+body nav section.animation p.text5 {
   grid-area: text5;
 }
 
-body section.animation p.text6 {
+body nav section.animation p.text6 {
   grid-area: text6;
 }
 
-body section.animation div.empty1 {
+body nav section.animation div.empty1 {
   grid-area: empty1;
 }
 
-body section.animation div.empty2 {
+body nav section.animation div.empty2 {
   grid-area: empty2;
 }
 
-body section.animation button:nth-of-type(1) {
+body nav section.animation button:nth-of-type(1) {
   animation: one 10s linear infinite;
 }
 
-body section.animation button:nth-of-type(2) {
+body nav section.animation button:nth-of-type(2) {
   animation: two 10s linear infinite;
 }
 
-body section.animation button:nth-of-type(3) {
+body nav section.animation button:nth-of-type(3) {
   animation: three 10s linear infinite;
 }
 
-body section.animation button:nth-of-type(4) {
+body nav section.animation button:nth-of-type(4) {
   animation: four 10s linear infinite;
 }
 
-body section.animation button:nth-of-type(5) {
+body nav section.animation button:nth-of-type(5) {
   animation: five 10s linear infinite;
 }
 
-body section.animation button:nth-of-type(6) {
+body nav section.animation button:nth-of-type(6) {
   animation: six 10s linear infinite;
 }
 
-body section.animation p {
+body nav section.animation p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.8vw;
   font-weight: 200;
@@ -835,47 +965,47 @@ body section.animation p {
   left: 0;
 }
 
-body section.animation button {
+body nav section.animation button {
   border: none;
   opacity: 0.4;
   background: white;
 }
 
-body section.animation button:hover {
+body nav section.animation button:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-body section.animation button:nth-of-type(1):focus ~ p:nth-of-type(1) {
+body nav section.animation button:nth-of-type(1):focus ~ p:nth-of-type(1) {
   display: block;
 }
 
-body section.animation button:nth-of-type(2):focus ~ p:nth-of-type(2) {
+body nav section.animation button:nth-of-type(2):focus ~ p:nth-of-type(2) {
   display: block;
 }
 
-body section.animation button:nth-of-type(3):focus ~ p:nth-of-type(3) {
+body nav section.animation button:nth-of-type(3):focus ~ p:nth-of-type(3) {
   display: block;
 }
 
-body section.animation button:nth-of-type(4):focus ~ p:nth-of-type(4) {
+body nav section.animation button:nth-of-type(4):focus ~ p:nth-of-type(4) {
   display: block;
 }
 
-body section.animation button:nth-of-type(5):focus ~ p:nth-of-type(5) {
+body nav section.animation button:nth-of-type(5):focus ~ p:nth-of-type(5) {
   display: block;
 }
 
-body section.animation button:nth-of-type(6):focus ~ p:nth-of-type(6) {
+body nav section.animation button:nth-of-type(6):focus ~ p:nth-of-type(6) {
   display: block;
 }
 
-body div.example {
+body nav div.example {
   margin: 20vw;
   background: lime;
 }
 
-.div_footer_top {
+body .div_footer_top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -883,7 +1013,7 @@ body div.example {
   background: white;
 }
 
-.div_footer_top h2 {
+body .div_footer_top h2 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -894,28 +1024,28 @@ body div.example {
   font-weight: lighter;
 }
 
-.div_footer_top h2 img {
+body .div_footer_top h2 img {
   width: 5vw;
   height: 5vw;
 }
 
-.div_footer_top hr {
+body .div_footer_top hr {
   color: green;
   width: 90%;
 }
 
-.div_footer_top ul {
+body .div_footer_top ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.div_footer_top ul h6 {
+body .div_footer_top ul h6 {
   margin-left: 1vw;
   margin-bottom: 2vw;
 }
 
-.div_footer_top ul button {
+body .div_footer_top ul button {
   background-color: white;
   border-color: green;
   color: green;
@@ -925,13 +1055,13 @@ body div.example {
   text-align: center;
 }
 
-.div_footer_top ul button:hover {
+body .div_footer_top ul button:hover {
   background-color: green;
   color: white;
   border: 1px solid green;
 }
 
-.div_footer_top ul li {
+body .div_footer_top ul li {
   list-style-type: none;
   margin-left: 1vw;
   margin-bottom: 2vw;
@@ -939,12 +1069,12 @@ body div.example {
   font-weight: lighter;
 }
 
-.div_footer_bottom {
+body .div_footer_bottom {
   display: flex;
   justify-content: flex-end;
 }
 
-.div_footer_bottom select {
+body .div_footer_bottom select {
   width: 10vw;
   padding: 1vw;
   margin-left: 1vw;
@@ -952,53 +1082,53 @@ body div.example {
   border-color: green;
 }
 
-i {
+body i {
   margin: 1vw auto;
 }
 
-.footnote {
+body .footnote {
   display: flex;
   justify-content: flex-end;
 }
 
-.footnote hr {
+body .footnote hr {
   width: 80%;
   color: green;
 }
 
-.footnote span {
+body .footnote span {
   flex-grow: 1;
 }
 
-.footnote li {
+body .footnote li {
   color: silver;
   margin: 2.5vw;
   list-style-type: none;
 }
 
-.footnote li a {
+body .footnote li a {
   text-decoration: none;
   color: silver;
 }
 
-.footnote li a:hover {
+body .footnote li a:hover {
   color: green;
 }
 
 @media screen and (max-width: 600px) {
-  .div_footer_top, .div_footer_bottom, .footnote {
+  body .div_footer_top, body .div_footer_bottom, body .footnote {
     display: block;
     background-color: black;
     color: white;
     float: left;
     width: 100%;
   }
-  .div_footer_top > ul > button {
+  body .div_footer_top > ul > button {
     width: 50%;
     height: 8vw;
     font-size: 1.5vw;
   }
-  .div_footer_top > h2 {
+  body .div_footer_top > h2 {
     color: green;
     font-size: 6vw;
     text-shadow: 0.3vw 0.3vw white;
