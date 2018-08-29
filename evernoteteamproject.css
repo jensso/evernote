@@ -6,21 +6,14 @@ body nav {
   position: fixed;
   width: 100%;
   height: 8vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @media screen and (max-width: 600px) {
   body nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -71,9 +64,7 @@ body nav div .normalbtn i {
 }
 
 body nav div:last-of-type {
-  -webkit-box-flex: 0.8;
-      -ms-flex-positive: 0.8;
-          flex-grow: 0.8;
+  flex-grow: 0.8;
   padding-top: 2.5vw;
 }
 
@@ -105,14 +96,15 @@ body nav .dropdown1:hover .dropdown-content1 {
 }
 
 body nav .dropdown-content1 {
+  position: absolute;
+  left: -1vw;
   height: auto;
   width: 11vw;
   background: white;
   display: none;
   position: absolute;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -143,8 +135,7 @@ body nav .dropdown-content2 {
   display: none;
   position: absolute;
   border-radius: 3px;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -168,15 +159,10 @@ body section.signup {
   height: 50vw;
   width: 100%;
   background: green;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 2vw 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 body section.signup div.desktop_text {
@@ -215,15 +201,9 @@ body section.signup div.desktop_text button:hover {
 
 body section.percent {
   height: 40vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 body section.percent div {
@@ -266,18 +246,10 @@ body section.percent div.percent_text button:hover {
 body section.brain {
   height: 55vw;
   background: whitesmoke;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 body section.brain h1 {
@@ -286,11 +258,8 @@ body section.brain h1 {
 
 body section.brain div.brain_text {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 body section.brain div.brain_text div {
@@ -327,12 +296,8 @@ body section.wave div.wave_text p {
 }
 
 body section.wave div.kopf {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 90vw;
   margin: 5vw auto;
   line-height: 1.6;
@@ -341,16 +306,9 @@ body section.wave div.kopf {
 
 body section.wave div.kopf div.kopf_text {
   width: 40vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -379,12 +337,8 @@ body section.wave div.kopf div.kopf_img {
 }
 
 body section.wave div.premium {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 90vw;
   margin: 10vw auto;
   line-height: 1.6;
@@ -394,16 +348,9 @@ body section.wave div.premium {
 
 body section.wave div.premium div.premium_text {
   width: 40vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -432,12 +379,8 @@ body section.wave div.premium div.premium_img {
 }
 
 body section.wave div.business {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 90vw;
   margin: 10vw auto;
   line-height: 1.6;
@@ -446,16 +389,9 @@ body section.wave div.business {
 
 body section.wave div.business div.business_text {
   width: 40vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -510,69 +446,6 @@ body div.heart {
   margin-top: 20vw;
 }
 
-@-webkit-keyframes one {
-  -5% {
-    opacity: 1;
-  }
-  0% {
-    opacity: 1;
-  }
-  5% {
-    opacity: 1;
-  }
-  11% {
-    opacity: 1;
-  }
-  16% {
-    opacity: 1;
-  }
-  22% {
-    opacity: 0.4;
-  }
-  28% {
-    opacity: 0.4;
-  }
-  33% {
-    opacity: 0.4;
-  }
-  38% {
-    opacity: 0.4;
-  }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 0.4;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
 @keyframes one {
   -5% {
     opacity: 1;
@@ -594,66 +467,6 @@ body div.heart {
   }
   28% {
     opacity: 0.4;
-  }
-  33% {
-    opacity: 0.4;
-  }
-  38% {
-    opacity: 0.4;
-  }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 0.4;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
-@-webkit-keyframes two {
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
-    opacity: 1;
-  }
-  22% {
-    opacity: 1;
-  }
-  28% {
-    opacity: 1;
   }
   33% {
     opacity: 0.4;
@@ -756,66 +569,6 @@ body div.heart {
   }
 }
 
-@-webkit-keyframes three {
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
-    opacity: 0.4;
-  }
-  22% {
-    opacity: 0.4;
-  }
-  28% {
-    opacity: 0.4;
-  }
-  33% {
-    opacity: 1;
-  }
-  38% {
-    opacity: 1;
-  }
-  43% {
-    opacity: 1;
-  }
-  48% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 0.4;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
 @keyframes three {
   0% {
     opacity: 0.4;
@@ -855,66 +608,6 @@ body div.heart {
   }
   65% {
     opacity: 0.4;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 0.4;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
-@-webkit-keyframes four {
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
-    opacity: 0.4;
-  }
-  22% {
-    opacity: 0.4;
-  }
-  28% {
-    opacity: 0.4;
-  }
-  33% {
-    opacity: 0.4;
-  }
-  38% {
-    opacity: 0.4;
-  }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  65% {
-    opacity: 1;
   }
   71% {
     opacity: 0.4;
@@ -996,66 +689,6 @@ body div.heart {
   }
 }
 
-@-webkit-keyframes five {
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
-    opacity: 0.4;
-  }
-  22% {
-    opacity: 0.4;
-  }
-  28% {
-    opacity: 0.4;
-  }
-  33% {
-    opacity: 0.4;
-  }
-  38% {
-    opacity: 0.4;
-  }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 1;
-  }
-  78% {
-    opacity: 1;
-  }
-  83% {
-    opacity: 1;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
 @keyframes five {
   0% {
     opacity: 0.4;
@@ -1110,66 +743,6 @@ body div.heart {
   }
   95% {
     opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
-@-webkit-keyframes six {
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
-    opacity: 0.4;
-  }
-  22% {
-    opacity: 0.4;
-  }
-  28% {
-    opacity: 0.4;
-  }
-  33% {
-    opacity: 0.4;
-  }
-  38% {
-    opacity: 0.4;
-  }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 1;
-  }
-  89% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
   }
   100% {
     opacity: 0.4;
@@ -1233,85 +806,6 @@ body div.heart {
   }
   100% {
     opacity: 0.4;
-  }
-}
-
-@-webkit-keyframes click {
-  0% {
-    opacity: 1;
-    display: block;
-  }
-  5% {
-    opacity: 1;
-    display: block;
-  }
-  11% {
-    opacity: 1;
-    display: block;
-  }
-  16% {
-    opacity: 1;
-    display: block;
-  }
-  22% {
-    opacity: 0.4;
-    display: block;
-  }
-  28% {
-    opacity: 0.4;
-    display: block;
-  }
-  33% {
-    opacity: 0.4;
-    display: block;
-  }
-  38% {
-    opacity: 0.4;
-    display: block;
-  }
-  43% {
-    opacity: 0.4;
-    display: block;
-  }
-  48% {
-    opacity: 0.4;
-    display: block;
-  }
-  55% {
-    opacity: 0.4;
-    display: block;
-  }
-  60% {
-    opacity: 0.4;
-    display: block;
-  }
-  65% {
-    opacity: 0.4;
-    display: block;
-  }
-  71% {
-    opacity: 0.4;
-    display: block;
-  }
-  78% {
-    opacity: 0.4;
-    display: block;
-  }
-  83% {
-    opacity: 0.4;
-    display: block;
-  }
-  89% {
-    opacity: 0.4;
-    display: block;
-  }
-  95% {
-    opacity: 0.4;
-    display: block;
-  }
-  100% {
-    opacity: 0.4;
-    display: block;
   }
 }
 
@@ -1397,157 +891,93 @@ body div.heart {
 body section.animation {
   position: relative;
   width: 100%;
-  display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  -ms-grid-rows: (auto)[15];
-  -ms-grid-columns: 6vw 4vw 10vw 9vw 5vw 6.5vw 7vw 10vw 4vw 6vw;
-      grid-template: repeat(15, auto)/6vw 4vw 10vw 9vw 5vw 6.5vw 7vw 10vw 4vw 6vw;
+  grid-template: repeat(15, auto)/6vw 4vw 10vw 9vw 5vw 6.5vw 7vw 10vw 4vw 6vw;
   grid-gap: 0 2.5vw;
-      grid-template-areas: 'business business verge webby forbes forbes cloud manuel manuel manuel' 'business business verge webby forbes forbes cloud manuel manuel manuel' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2';
+  grid-template-areas: 'business business verge webby forbes forbes cloud manuel manuel manuel' 'business business verge webby forbes forbes cloud manuel manuel manuel' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2';
 }
 
 body section.animation button.animation_img1 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: business;
 }
 
 body section.animation button.animation_img2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: verge;
 }
 
 body section.animation button.animation_img3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
   grid-area: webby;
 }
 
 body section.animation button.animation_img4 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 2;
   grid-area: forbes;
 }
 
 body section.animation button.animation_img5 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 7;
   grid-area: cloud;
 }
 
 body section.animation button.animation_img6 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 3;
   grid-area: manuel;
 }
 
 body section.animation p.text1 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 8;
   grid-area: text1;
 }
 
 body section.animation p.text2 {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 8;
   grid-area: text2;
 }
 
 body section.animation p.text3 {
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 8;
   grid-area: text3;
 }
 
 body section.animation p.text4 {
-  -ms-grid-row: 9;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 8;
   grid-area: text4;
 }
 
 body section.animation p.text5 {
-  -ms-grid-row: 12;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 8;
   grid-area: text5;
 }
 
 body section.animation p.text6 {
-  -ms-grid-row: 14;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 8;
   grid-area: text6;
 }
 
 body section.animation div.empty1 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 13;
-  -ms-grid-column: 1;
   grid-area: empty1;
 }
 
 body section.animation div.empty2 {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 13;
-  -ms-grid-column: 10;
   grid-area: empty2;
 }
 
 body section.animation button:nth-of-type(1) {
-  -webkit-animation: one 10s linear infinite;
-          animation: one 10s linear infinite;
+  animation: one 10s linear infinite;
 }
 
 body section.animation button:nth-of-type(2) {
-  -webkit-animation: two 10s linear infinite;
-          animation: two 10s linear infinite;
+  animation: two 10s linear infinite;
 }
 
 body section.animation button:nth-of-type(3) {
-  -webkit-animation: three 10s linear infinite;
-          animation: three 10s linear infinite;
+  animation: three 10s linear infinite;
 }
 
 body section.animation button:nth-of-type(4) {
-  -webkit-animation: four 10s linear infinite;
-          animation: four 10s linear infinite;
+  animation: four 10s linear infinite;
 }
 
 body section.animation button:nth-of-type(5) {
-  -webkit-animation: five 10s linear infinite;
-          animation: five 10s linear infinite;
+  animation: five 10s linear infinite;
 }
 
 body section.animation button:nth-of-type(6) {
-  -webkit-animation: six 10s linear infinite;
-          animation: six 10s linear infinite;
+  animation: six 10s linear infinite;
 }
 
 body section.animation p {
@@ -1603,30 +1033,17 @@ body div.example {
 }
 
 .div_footer_top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background: white;
 }
 
 .div_footer_top h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-start;
+  justify-content: center;
   color: green;
   margin: 1.5vw;
   font-size: 2.5vw;
@@ -1645,15 +1062,9 @@ body div.example {
 }
 
 .div_footer_top ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .div_footer_top ul h6 {
@@ -1686,12 +1097,8 @@ body div.example {
 }
 
 .div_footer_bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .div_footer_bottom select {
@@ -1707,12 +1114,8 @@ i {
 }
 
 .footnote {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .footnote hr {
@@ -1721,9 +1124,7 @@ i {
 }
 
 .footnote span {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .footnote li {
@@ -1760,4 +1161,3 @@ i {
     text-shadow: 0.3vw 0.3vw white;
   }
 }
-/*# sourceMappingURL=evernoteteamproject.css.map */
