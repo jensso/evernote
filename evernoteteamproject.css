@@ -1004,12 +1004,13 @@ body nav div.example {
   margin: 20vw;
   background: lime;
 }
-footer > hr {
+
+body footer > hr {
   color: green;
   width: 90%;
 }
 
-.div_footer_part1 {
+body .div_footer_part1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -1017,7 +1018,7 @@ footer > hr {
   background: white;
 }
 
-.div_footer_part1 h2 {
+body .div_footer_part1 h2 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -1027,24 +1028,29 @@ footer > hr {
   font-family: arial;
   font-weight: lighter;
 }
-.div_footer_part1 h2 img {
+
+body .div_footer_part1 h2 img {
   width: 5vw;
   height: 5vw;
 }
-.div_footer_part1 hr {
+
+body .div_footer_part1 hr {
   color: green;
   width: 90%;
 }
-.div_footer_part1 ul {
+
+body .div_footer_part1 ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.div_footer_part1 ul h6 {
+
+body .div_footer_part1 ul h6 {
   margin-left: 1vw;
   margin-bottom: 2vw;
 }
-.div_footer_part1 ul button {
+
+body .div_footer_part1 ul button {
   background-color: white;
   border-color: green;
   color: green;
@@ -1053,29 +1059,33 @@ footer > hr {
   height: 4vw;
   text-align: center;
 }
-.div_footer_part1 ul button:hover {
+
+body .div_footer_part1 ul button:hover {
   background-color: green;
   color: white;
   border: 1px solid green;
   cursor: pointer;
 }
-.div_footer_part1 ul li {
+
+body .div_footer_part1 ul li {
   list-style-type: none;
   margin-left: 1vw;
   margin-bottom: 2vw;
   font-family: arial;
   font-weight: lighter;
 }
-.div_footer_part1 ul li:hover {
+
+body .div_footer_part1 ul li:hover {
   color: green;
   cursor: pointer;
 }
 
-.div_footer_part2 {
+body .div_footer_part2 {
   display: flex;
   justify-content: flex-end;
 }
-.div_footer_part2 select {
+
+body .div_footer_part2 select {
   width: 10vw;
   padding: 1vw;
   margin-left: 1vw;
@@ -1090,10 +1100,6 @@ body i {
 body .footnote {
   display: flex;
   justify-content: flex-end;
-}
-body .footnote hr {
-  width: 80%;
-  color: green;
 }
 
 body .footnote span {
@@ -1116,23 +1122,23 @@ body .footnote li a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .div_footer_part1, .div_footer_part2, .footnote {
+  body .div_footer_part1, body .div_footer_part2, body .footnote {
     display: block;
     background-color: black;
     color: white;
     float: left;
     width: 100%;
   }
-  .div_footer_part1 hr, .div_footer_part2 hr, .footnote hr {
+  body .div_footer_part1 hr, body .div_footer_part2 hr, body .footnote hr {
     width: 90%;
     color: green;
   }
-  .div_footer_part1 > ul > button {
+  body .div_footer_part1 > ul > button {
     width: 50%;
     height: 8vw;
     font-size: 1.5vw;
   }
-  .div_footer_part1 > h2 {
+  body .div_footer_part1 > h2 {
     color: green;
     font-size: 6vw;
     text-shadow: 0.3vw 0.3vw white;
