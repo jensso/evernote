@@ -992,23 +992,23 @@ i {
 }
 
 @media screen and (max-width: 600px) {
-  .div_footer_top, .div_footer_bottom, .footnote {
+  .div_footer_part1, .div_footer_part2, .footnote {
     display: block;
     background-color: black;
     color: white;
     float: left;
     width: 100%;
   }
-  .div_footer_top hr, .div_footer_bottom hr, .footnote hr {
+  .div_footer_part1 hr, .div_footer_part2 hr, .footnote hr {
     width: 90%;
     color: green;
   }
-  .div_footer_top > ul > button {
+  .div_footer_part1 > ul > button {
     width: 50%;
     height: 8vw;
     font-size: 1.5vw;
   }
-  .div_footer_top > h2 {
+  .div_footer_part1 > h2 {
     color: green;
     font-size: 6vw;
     text-shadow: 0.3vw 0.3vw white;
