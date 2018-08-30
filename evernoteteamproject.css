@@ -47,6 +47,14 @@ body section.signup div:last-of-type img {
   height: 100%;
 }
 
+@media screen and (max-width: 580px) {
+  body section.signup {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
 body section.percent {
   height: 40vw;
   display: flex;
@@ -94,6 +102,33 @@ body section.percent div.percent_text button:hover {
 body section.percent div:last-of-type img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  body section.percent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+  }
+  body section.percent div.percent_text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  body section.percent div.percent_text h3 {
+    font-size: 5vw;
+    flex-grow: 1;
+    width: 100%;
+  }
+  body section.percent div.percent_text p {
+    font-size: 3vw;
+    width: 100vw;
+  }
 }
 
 body section.brain {
@@ -212,7 +247,7 @@ body section.wave div.kopf div.kopf_img img {
 
 body section.wave div.premium {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90vw;
   margin: 10vw auto;
   line-height: 1.6;
@@ -250,12 +285,11 @@ body section.wave div.premium div.premium_text a {
 
 body section.wave div.premium div.premium_img {
   width: 40vw;
-  height: 30vw;
 }
 
 body section.wave div.premium div.premium_img img {
-  width: 100%;
-  height: 100%;
+  width: 25vw;
+  height: 25vw;
 }
 
 body section.wave div.business {
@@ -338,7 +372,16 @@ body div.heart {
   25% {
     opacity: 1;
   }
+  28% {
+    opacity: 1;
+  }
+  29% {
+    opacity: 0.4;
+  }
   50% {
+    opacity: 0.4;
+  }
+  51% {
     opacity: 0.4;
   }
   75% {
@@ -356,7 +399,7 @@ body div.heart {
   25% {
     opacity: 1;
   }
-  35% {
+  26% {
     opacity: 0;
   }
   50% {
@@ -371,7 +414,6 @@ body div.heart {
 }
 
 body section.animation {
-  margin-bottom: 5vw;
   position: relative;
   width: 100%;
   display: grid;
@@ -440,62 +482,62 @@ body section.animation div.empty2 {
 }
 
 body section.animation button:nth-of-type(1) {
-  animation: img_animation 25s linear infinite;
+  animation: img_animation 22s linear infinite;
   animation-delay: 1s;
 }
 
 body section.animation button:nth-of-type(2) {
-  animation: img_animation 25s linear infinite;
+  animation: img_animation 22s linear infinite;
   animation-delay: 4s;
 }
 
 body section.animation button:nth-of-type(3) {
-  animation: img_animation 25s linear infinite;
+  animation: img_animation 22s linear infinite;
   animation-delay: 9s;
 }
 
 body section.animation button:nth-of-type(4) {
-  animation: img_animation 25s linear infinite;
+  animation: img_animation 22s linear infinite;
   animation-delay: 13s;
 }
 
 body section.animation button:nth-of-type(5) {
-  animation: img_animation 25s linear infinite;
+  animation: img_animation 22s linear infinite;
   animation-delay: 17s;
 }
 
 body section.animation button:nth-of-type(6) {
-  animation: img_animation 25s linear infinite;
+  animation: img_animation 22s linear infinite;
   animation-delay: 21s;
 }
 
 body section.animation p:nth-of-type(1) {
-  animation: p_animation 25s linear infinite;
+  animation: p_animation 24s linear infinite;
   animation-delay: 1s;
 }
 
 body section.animation p:nth-of-type(2) {
-  animation: p_animation 25s linear infinite;
+  animation: p_animation 24s linear infinite;
   animation-delay: 4s;
 }
 
 body section.animation p:nth-of-type(3) {
-  animation: p_animation 25s linear infinite;
+  animation: p_animation 24s linear infinite;
   animation-delay: 9s;
 }
 
 body section.animation p:nth-of-type(4) {
-  animation: p_animation 25s linear infinite;
+  animation: p_animation 24s linear infinite;
   animation-delay: 13s;
 }
 
 body section.animation p:nth-of-type(5) {
-  animation: p_animation 25s linear infinite;
+  animation: p_animation 24s linear infinite;
   animation-delay: 17s;
 }
 
 body section.animation p:nth-of-type(6) {
-  animation: p_animation 25s linear infinite;
+  animation: p_animation 24s linear infinite;
   animation-delay: 21s;
 }
 
@@ -552,7 +594,6 @@ body section.animation button:nth-of-type(6):focus ~ p:nth-of-type(6) {
 }
 
 body div.margin {
-  height: 10vw;
+  height: 5vw;
   margin-top: 20vw;
-  background: lime;
 }

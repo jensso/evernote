@@ -1,8 +1,12 @@
 
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
 
 body {
-
-
 
   section.signup {
     height: 50vw;
@@ -45,6 +49,14 @@ body {
           height: 100%;
         }
       }
+
+
+      @media screen and (max-width: 580px) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+
     }
 
 
@@ -97,6 +109,34 @@ body {
         img {
           width: 100%;
           height: 100%;
+        }
+      }
+
+      @media screen and (max-width: 580px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        height: auto;
+        margin: auto 0;
+
+        div.percent_text {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          height: auto;
+
+          h3 {
+            font-size: 5vw;
+            flex-grow: 1;
+            width: 100%;
+          }
+
+          p {
+            font-size: 3vw;
+            width: 100vw;
+          }
         }
       }
     }
@@ -238,7 +278,7 @@ body {
 
       div.premium {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 90vw;
         margin: 10vw auto;
         line-height: 1.6;
@@ -276,11 +316,11 @@ body {
 
         div.premium_img {
           width: 40vw;
-          height: 30vw;
+
 
           img {
-            width: 100%;
-            height: 100%;
+            width: 25vw;
+            height: 25vw;
           }
         }
       }
@@ -371,61 +411,57 @@ body {
 
 
 
+    // @keyframes img_animation {
+    //   5% {opacity: 0.4;}
+    //   24% {opacity: 0.4;}
+    //   25% {opacity: 1;}
+    //   35% {opacity: 1;}
+    //   36% {opacity: 0.4;}
+    //   50% {opacity: 0.4;}
+    //   75% {opacity: 0.4;}
+    //   100% {opacity: 0.4;}
+    // }
+
     @keyframes img_animation {
       5% {opacity: 0.4;}
       25% {opacity: 1;}
+      28% {opacity: 1;}
+      29% {opacity: 0.4;}
       50% {opacity: 0.4;}
+      51% {opacity: 0.4;}
       75% {opacity: 0.4;}
       100% {opacity: 0.4;}
     }
 
 
+
+
     @keyframes p_animation {
       5% {opacity: 0;}
       25% {opacity: 1;}
-      35% {opacity: 0;}
+      26% {opacity: 0;}
       50% {opacity: 0;}
       75% {opacity: 0;}
       100% {opacity: 0;}
     }
 
+    //
+    // @keyframes p_animation {
+    //   5% {opacity: 0;}
+    //   25% {opacity: 1;}
+    //   28% {opacity: 1;}
+    //   40% {opacity: 1;}
+    //   45% {opacity: 0;}
+    //   50% {opacity: 0;}
+    //   75% {opacity: 0;}
+    //   100% {opacity: 0;}
+    // }
+
 
 // -------------------------------------------------------------------
 
-        // @keyframes click {
-        //   0% {opacity: 1; display: block;}
-        //   5% {opacity: 1; display: block;}
-        //   11% {opacity: 1; display: block;}
-        //   16% {opacity: 1; display: block;}
-        //   22% {opacity: 0.4; display: block;}
-        //   28% {opacity: 0.4; display: block;}
-        //   33% {opacity: 0.4; display: block;}
-        //   38% {opacity: 0.4; display: block;}
-        //   43% {opacity: 0.4; display: block;}
-        //   48% {opacity: 0.4; display: block;}
-        //   55% {opacity: 0.4; display: block;}
-        //   60% {opacity: 0.4; display: block;}
-        //   65% {opacity: 0.4; display: block;}
-        //   71% {opacity: 0.4; display: block;}
-        //   78% {opacity: 0.4; display: block;}
-        //   83% {opacity: 0.4; display: block;}
-        //   89% {opacity: 0.4; display: block;}
-        //   95% {opacity: 0.4; display: block;}
-        //   100% {opacity: 0.4; display: block;}
-        // }
-
-
-
-
-
-
-
-
-
-
 
     section.animation {
-      margin-bottom: 5vw;
       position: relative;
       width: 100%;
       display: grid;
@@ -471,54 +507,6 @@ body {
 
 
 
-      // button.animation_img1 {
-      //   grid-area: business;
-      // }
-      //
-      // button.animation_img2 {
-      //   grid-area: verge;
-      // }
-      //
-      // button.animation_img3 {
-      //   grid-area: webby;
-      // }
-      //
-      // button.animation_img4 {
-      //   grid-area: forbes;
-      // }
-      //
-      // button.animation_img5 {
-      //   grid-area: cloud;
-      // }
-      //
-      // button.animation_img6 {
-      //   grid-area: manuel;
-      // }
-      //
-      // p.text1 {
-      //   grid-area: text1;
-      // }
-      //
-      // p.text2 {
-      //   grid-area: text2;
-      // }
-      //
-      // p.text3 {
-      //   grid-area: text3;
-      // }
-      //
-      // p.text4 {
-      //   grid-area: text4;
-      // }
-      //
-      // p.text5 {
-      //   grid-area: text5;
-      // }
-      //
-      // p.text6 {
-      //   grid-area: text6;
-      // }
-
       div.empty1 {
         grid-area: empty1;
       }
@@ -533,7 +521,7 @@ body {
       @each $num, $delay in (1, 1), (2, 4), (3, 9), (4, 13),
                                 (5, 17), (6, 21) {
                                   button:nth-of-type(#{$num}) {
-                                    animation: img_animation 25s linear infinite;
+                                    animation: img_animation 22s linear infinite;
                                     animation-delay: $delay + s;
                                   }
                                 }
@@ -541,10 +529,11 @@ body {
 
 
 
+
       @each $num, $delay in (1, 1), (2, 4), (3, 9), (4, 13),
                                 (5, 17), (6, 21) {
                                   p:nth-of-type(#{$num}) {
-                                    animation: p_animation 25s linear infinite;
+                                    animation: p_animation 24s linear infinite;
                                     animation-delay: $delay + s;
                                   }
                                 }
@@ -585,7 +574,6 @@ body {
 
           @for $num from 1 through 6 {
             &:nth-of-type(#{$num}):focus {
-              // animation: click 10s linear;
 
               ~ p:nth-of-type(#{$num}) {
                 opacity: 1;
@@ -596,17 +584,15 @@ body {
         }
 
 
-
-
     }
 
 
 
 
     div.margin {
-      height: 10vw;
+      height: 5vw;
       margin-top: 20vw;
-      background: lime;
     }
+
 
 }
