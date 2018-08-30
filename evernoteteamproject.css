@@ -106,7 +106,6 @@ body nav .dropdown1:hover .dropdown-content1 {
 
 body nav .dropdown-content1 {
   position: absolute;
-  left: -1vw;
   height: auto;
   width: 11vw;
   background: white;
@@ -140,7 +139,6 @@ body nav .dropdown2:hover .dropdown-content2 {
 
 body nav .dropdown-content2 {
   position: absolute;
-  left: -1vw;
   height: auto;
   width: 11vw;
   background: white;
