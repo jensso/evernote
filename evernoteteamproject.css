@@ -207,7 +207,6 @@ body nav .dropdown-content2 a:hover {
 
 body section.signup {
   height: 50vw;
-  width: 100%;
   background: green;
   display: flex;
   padding: 2vw 0;
@@ -216,6 +215,7 @@ body section.signup {
 }
 
 body section.signup div.desktop_text {
+  width: 40vw;
   line-height: 1.6;
   letter-spacing: 0.07vw;
   font-family: Arial, Helvetica, sans-serif;
@@ -240,6 +240,7 @@ body section.signup div.desktop_text > button {
 }
 
 body section.signup div.desktop_text button {
+  outline: none;
   padding: 1vw 2vw;
   border: none;
 }
@@ -247,6 +248,55 @@ body section.signup div.desktop_text button {
 body section.signup div.desktop_text button:hover {
   cursor: pointer;
   background: #cccccc;
+}
+
+@media screen and (max-width: 580px) {
+  body section.signup div.desktop_text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  body section.signup div.desktop_text > span {
+    font-size: 6vw;
+    color: white;
+    padding: 2vw 0;
+  }
+  body section.signup div.desktop_text > p {
+    font-size: 4vw;
+    color: white;
+    padding: 2vw 0;
+  }
+  body section.signup div.desktop_text > button {
+    font-size: 3vw;
+    color: green;
+    padding: 2vw 0;
+  }
+}
+
+body section.signup div.signup_img {
+  width: 40vw;
+}
+
+body section.signup div.signup_img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  body section.signup div.signup_img {
+    width: 60vw;
+    margin: 3vw 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.signup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 body section.percent {
@@ -261,6 +311,7 @@ body section.percent div {
 }
 
 body section.percent div.percent_text {
+  width: 40vw;
   font-family: Tahoma, Geneva, sans-serif;
   line-height: 1.6;
   letter-spacing: 0.1vw;
@@ -293,8 +344,53 @@ body section.percent div.percent_text button:hover {
   background: #00b300;
 }
 
+@media screen and (max-width: 580px) {
+  body section.percent div.percent_text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  body section.percent div.percent_text > h3 {
+    font-size: 6vw;
+    padding: 2vw 0;
+  }
+  body section.percent div.percent_text > p {
+    font-size: 4vw;
+    padding: 2vw 0;
+  }
+  body section.percent div.percent_text > button {
+    font-size: 3vw;
+    padding: 2vw 0;
+  }
+}
+
+body section.percent div.percent_img {
+  width: 35vw;
+}
+
+body section.percent div.percent_img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  body section.percent div.percent_img {
+    width: 60vw;
+    margin: 5vw 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.percent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
 body section.brain {
-  height: 55vw;
   background: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -302,8 +398,26 @@ body section.brain {
   align-items: center;
 }
 
+body section.brain div.brain_img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  body section.brain div.brain_img {
+    width: 35vw;
+    margin-top: 3vw;
+  }
+}
+
 body section.brain h1 {
   font-size: 4vw;
+}
+
+@media screen and (max-width: 580px) {
+  body section.brain h1 {
+    font-size: 6vw;
+  }
 }
 
 body section.brain div.brain_text {
@@ -321,8 +435,40 @@ body section.brain div.brain_text div {
   color: #737373;
 }
 
+@media screen and (max-width: 580px) {
+  body section.brain div.brain_text div {
+    width: 80%;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.brain div.brain_text {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 body section.wave {
   text-align: center;
+}
+
+body section.wave div:first-of-type {
+  height: 9.3vw;
+  width: 9.4vw;
+  display: inline-block;
+}
+
+body section.wave div:first-of-type img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div:first-of-type {
+    width: 20vw;
+    height: 21vw;
+  }
 }
 
 body section.wave div.wave_img {
@@ -341,8 +487,20 @@ body section.wave div.wave_text h1 {
   font-size: 3vw;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.wave_text h1 {
+    font-size: 6vw;
+  }
+}
+
 body section.wave div.wave_text p {
   font-size: 1.8vw;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.wave_text p {
+    font-size: 4vw;
+  }
 }
 
 body section.wave div.kopf {
@@ -355,6 +513,7 @@ body section.wave div.kopf {
 }
 
 body section.wave div.kopf div.kopf_text {
+  height: auto;
   width: 40vw;
   display: flex;
   flex-direction: column;
@@ -369,10 +528,22 @@ body section.wave div.kopf div.kopf_text h3 {
   color: #00b300;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf div.kopf_text h3 {
+    font-size: 6vw;
+  }
+}
+
 body section.wave div.kopf div.kopf_text p {
   font-size: 1.8vw;
   font-weight: 200;
   color: #262626;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf div.kopf_text p {
+    font-size: 4vw;
+  }
 }
 
 body section.wave div.kopf div.kopf_text a {
@@ -382,13 +553,38 @@ body section.wave div.kopf div.kopf_text a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf div.kopf_text a {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf div.kopf_text {
+    width: 80%;
+    text-align: center;
+  }
+}
+
 body section.wave div.kopf div.kopf_img {
   width: 40vw;
 }
 
+body section.wave div.kopf div.kopf_img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
 body section.wave div.premium {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90vw;
   margin: 10vw auto;
   line-height: 1.6;
@@ -426,6 +622,11 @@ body section.wave div.premium div.premium_text a {
 
 body section.wave div.premium div.premium_img {
   width: 40vw;
+}
+
+body section.wave div.premium div.premium_img img {
+  width: 25vw;
+  height: 25vw;
 }
 
 body section.wave div.business {
@@ -469,6 +670,11 @@ body section.wave div.business div.business_img {
   width: 40vw;
 }
 
+body section.wave div.business div.business_img img {
+  width: 100%;
+  height: 100%;
+}
+
 body section.wave div.compare {
   text-align: center;
   margin: 5vw 0;
@@ -496,62 +702,26 @@ body div.heart {
   margin-top: 20vw;
 }
 
-@keyframes one {
-  -5% {
-    opacity: 1;
-  }
-  0% {
-    opacity: 1;
-  }
+@keyframes img_animation {
   5% {
-    opacity: 1;
-  }
-  11% {
-    opacity: 1;
-  }
-  16% {
-    opacity: 1;
-  }
-  22% {
     opacity: 0.4;
+  }
+  25% {
+    opacity: 1;
   }
   28% {
+    opacity: 1;
+  }
+  29% {
     opacity: 0.4;
   }
-  33% {
+  50% {
     opacity: 0.4;
   }
-  38% {
+  51% {
     opacity: 0.4;
   }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 0.4;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
+  75% {
     opacity: 0.4;
   }
   100% {
@@ -559,382 +729,24 @@ body div.heart {
   }
 }
 
-@keyframes two {
-  0% {
-    opacity: 0.4;
-  }
+@keyframes p_animation {
   5% {
-    opacity: 0.4;
+    opacity: 0;
   }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
+  25% {
     opacity: 1;
   }
-  22% {
-    opacity: 1;
+  26% {
+    opacity: 0;
   }
-  28% {
-    opacity: 1;
+  50% {
+    opacity: 0;
   }
-  33% {
-    opacity: 0.4;
-  }
-  38% {
-    opacity: 0.4;
-  }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 0.4;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
-    opacity: 0.4;
+  75% {
+    opacity: 0;
   }
   100% {
-    opacity: 0.4;
-  }
-}
-
-@keyframes three {
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
-    opacity: 0.4;
-  }
-  22% {
-    opacity: 0.4;
-  }
-  28% {
-    opacity: 0.4;
-  }
-  33% {
-    opacity: 1;
-  }
-  38% {
-    opacity: 1;
-  }
-  43% {
-    opacity: 1;
-  }
-  48% {
-    opacity: 1;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 0.4;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
-@keyframes four {
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
-    opacity: 0.4;
-  }
-  22% {
-    opacity: 0.4;
-  }
-  28% {
-    opacity: 0.4;
-  }
-  33% {
-    opacity: 0.4;
-  }
-  38% {
-    opacity: 0.4;
-  }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  65% {
-    opacity: 1;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 0.4;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
-@keyframes five {
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
-    opacity: 0.4;
-  }
-  22% {
-    opacity: 0.4;
-  }
-  28% {
-    opacity: 0.4;
-  }
-  33% {
-    opacity: 0.4;
-  }
-  38% {
-    opacity: 0.4;
-  }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 1;
-  }
-  78% {
-    opacity: 1;
-  }
-  83% {
-    opacity: 1;
-  }
-  89% {
-    opacity: 0.4;
-  }
-  95% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
-@keyframes six {
-  0% {
-    opacity: 0.4;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  11% {
-    opacity: 0.4;
-  }
-  16% {
-    opacity: 0.4;
-  }
-  22% {
-    opacity: 0.4;
-  }
-  28% {
-    opacity: 0.4;
-  }
-  33% {
-    opacity: 0.4;
-  }
-  38% {
-    opacity: 0.4;
-  }
-  43% {
-    opacity: 0.4;
-  }
-  48% {
-    opacity: 0.4;
-  }
-  55% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  65% {
-    opacity: 0.4;
-  }
-  71% {
-    opacity: 0.4;
-  }
-  78% {
-    opacity: 0.4;
-  }
-  83% {
-    opacity: 1;
-  }
-  89% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-
-@keyframes click {
-  0% {
-    opacity: 1;
-    display: block;
-  }
-  5% {
-    opacity: 1;
-    display: block;
-  }
-  11% {
-    opacity: 1;
-    display: block;
-  }
-  16% {
-    opacity: 1;
-    display: block;
-  }
-  22% {
-    opacity: 0.4;
-    display: block;
-  }
-  28% {
-    opacity: 0.4;
-    display: block;
-  }
-  33% {
-    opacity: 0.4;
-    display: block;
-  }
-  38% {
-    opacity: 0.4;
-    display: block;
-  }
-  43% {
-    opacity: 0.4;
-    display: block;
-  }
-  48% {
-    opacity: 0.4;
-    display: block;
-  }
-  55% {
-    opacity: 0.4;
-    display: block;
-  }
-  60% {
-    opacity: 0.4;
-    display: block;
-  }
-  65% {
-    opacity: 0.4;
-    display: block;
-  }
-  71% {
-    opacity: 0.4;
-    display: block;
-  }
-  78% {
-    opacity: 0.4;
-    display: block;
-  }
-  83% {
-    opacity: 0.4;
-    display: block;
-  }
-  89% {
-    opacity: 0.4;
-    display: block;
-  }
-  95% {
-    opacity: 0.4;
-    display: block;
-  }
-  100% {
-    opacity: 0.4;
-    display: block;
+    opacity: 0;
   }
 }
 
@@ -947,54 +759,54 @@ body section.animation {
   text-align: center;
   grid-template: repeat(15, auto)/6vw 4vw 10vw 9vw 5vw 6.5vw 7vw 10vw 4vw 6vw;
   grid-gap: 0 2.5vw;
-  grid-template-areas: 'business business verge webby forbes forbes cloud manuel manuel manuel' 'business business verge webby forbes forbes cloud manuel manuel manuel' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2';
+  grid-template-areas: 'business business verge webby forbes forbes cloud manuel manuel manuel' 'business business verge webby forbes forbes cloud manuel manuel manuel' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text1 text1 text1 text1 text1 text1 text1 text1 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text2 text2 text2 text2 text2 text2 text2 text2 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text3 text3 text3 text3 text3 text3 text3 text3 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text4 text4 text4 text4 text4 text4 text4 text4 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text5 text5 text5 text5 text5 text5 text5 text5 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2' 'empty1 text6 text6 text6 text6 text6 text6 text6 text6 empty2';
 }
 
-body section.animation button.animation_img1 {
+body section.animation button:nth-of-type(1) {
   grid-area: business;
 }
 
-body section.animation button.animation_img2 {
-  grid-area: verge;
-}
-
-body section.animation button.animation_img3 {
-  grid-area: webby;
-}
-
-body section.animation button.animation_img4 {
-  grid-area: forbes;
-}
-
-body section.animation button.animation_img5 {
-  grid-area: cloud;
-}
-
-body section.animation button.animation_img6 {
-  grid-area: manuel;
-}
-
-body section.animation p.text1 {
+body section.animation p:nth-of-type(1) {
   grid-area: text1;
 }
 
-body section.animation p.text2 {
+body section.animation button:nth-of-type(2) {
+  grid-area: verge;
+}
+
+body section.animation p:nth-of-type(2) {
   grid-area: text2;
 }
 
-body section.animation p.text3 {
+body section.animation button:nth-of-type(3) {
+  grid-area: webby;
+}
+
+body section.animation p:nth-of-type(3) {
   grid-area: text3;
 }
 
-body section.animation p.text4 {
+body section.animation button:nth-of-type(4) {
+  grid-area: forbes;
+}
+
+body section.animation p:nth-of-type(4) {
   grid-area: text4;
 }
 
-body section.animation p.text5 {
+body section.animation button:nth-of-type(5) {
+  grid-area: cloud;
+}
+
+body section.animation p:nth-of-type(5) {
   grid-area: text5;
 }
 
-body section.animation p.text6 {
+body section.animation button:nth-of-type(6) {
+  grid-area: manuel;
+}
+
+body section.animation p:nth-of-type(6) {
   grid-area: text6;
 }
 
@@ -1007,27 +819,68 @@ body section.animation div.empty2 {
 }
 
 body section.animation button:nth-of-type(1) {
-  animation: one 10s linear infinite;
+  animation: img_animation 22s linear infinite;
+  animation-delay: 1s;
 }
 
 body section.animation button:nth-of-type(2) {
-  animation: two 10s linear infinite;
+  animation: img_animation 22s linear infinite;
+  animation-delay: 4s;
 }
 
 body section.animation button:nth-of-type(3) {
-  animation: three 10s linear infinite;
+  animation: img_animation 22s linear infinite;
+  animation-delay: 9s;
 }
 
 body section.animation button:nth-of-type(4) {
-  animation: four 10s linear infinite;
+  animation: img_animation 22s linear infinite;
+  animation-delay: 13s;
 }
 
 body section.animation button:nth-of-type(5) {
-  animation: five 10s linear infinite;
+  animation: img_animation 22s linear infinite;
+  animation-delay: 17s;
 }
 
 body section.animation button:nth-of-type(6) {
-  animation: six 10s linear infinite;
+  animation: img_animation 22s linear infinite;
+  animation-delay: 21s;
+}
+
+body section.animation p:nth-of-type(1) {
+  animation: p_animation 24s linear infinite;
+  animation-delay: 1s;
+}
+
+body section.animation p:nth-of-type(2) {
+  animation: p_animation 24s linear infinite;
+  animation-delay: 4s;
+}
+
+body section.animation p:nth-of-type(3) {
+  animation: p_animation 24s linear infinite;
+  animation-delay: 9s;
+}
+
+body section.animation p:nth-of-type(4) {
+  animation: p_animation 24s linear infinite;
+  animation-delay: 13s;
+}
+
+body section.animation p:nth-of-type(5) {
+  animation: p_animation 24s linear infinite;
+  animation-delay: 17s;
+}
+
+body section.animation p:nth-of-type(6) {
+  animation: p_animation 24s linear infinite;
+  animation-delay: 21s;
+}
+
+body section.animation img {
+  width: 100%;
+  height: 100%;
 }
 
 body section.animation p {
@@ -1036,8 +889,8 @@ body section.animation p {
   font-weight: 200;
   line-height: 1.8;
   letter-spacing: 0.1vw;
-  display: none;
-  position: relative;
+  position: absolute;
+  opacity: 0;
   top: 5vw;
   left: 0;
 }
@@ -1053,33 +906,52 @@ body section.animation button:hover {
   cursor: pointer;
 }
 
+body section.animation button:nth-of-type(1):focus {
+  outline: none;
+}
+
 body section.animation button:nth-of-type(1):focus ~ p:nth-of-type(1) {
-  display: block;
+  opacity: 1;
+}
+
+body section.animation button:nth-of-type(2):focus {
+  outline: none;
 }
 
 body section.animation button:nth-of-type(2):focus ~ p:nth-of-type(2) {
-  display: block;
+  opacity: 1;
+}
+
+body section.animation button:nth-of-type(3):focus {
+  outline: none;
 }
 
 body section.animation button:nth-of-type(3):focus ~ p:nth-of-type(3) {
-  display: block;
+  opacity: 1;
+}
+
+body section.animation button:nth-of-type(4):focus {
+  outline: none;
 }
 
 body section.animation button:nth-of-type(4):focus ~ p:nth-of-type(4) {
-  display: block;
+  opacity: 1;
+}
+
+body section.animation button:nth-of-type(5):focus {
+  outline: none;
 }
 
 body section.animation button:nth-of-type(5):focus ~ p:nth-of-type(5) {
-  display: block;
+  opacity: 1;
+}
+
+body section.animation button:nth-of-type(6):focus {
+  outline: none;
 }
 
 body section.animation button:nth-of-type(6):focus ~ p:nth-of-type(6) {
-  display: block;
-}
-
-body div.example {
-  margin: 20vw;
-  background: lime;
+  opacity: 1;
 }
 
 body footer > hr {

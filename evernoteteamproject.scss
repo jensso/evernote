@@ -177,11 +177,13 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 
 
+
+
   }
+
 
   section.signup {
     height: 50vw;
-    width: 100%;
     background: green;
     display: flex;
     padding: 2vw 0;
@@ -190,6 +192,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 
       div.desktop_text {
+        width: 40vw;
         line-height: 1.6;
         letter-spacing: 0.07vw;
         font-family: Arial, Helvetica, sans-serif;
@@ -204,6 +207,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
                 }
 
                 button {
+                  outline: none;
                   padding: 1vw 2vw;
                   border: none;
 
@@ -212,7 +216,46 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
                     background: darken(white, 20%);
                   }
                 }
+
+                @media screen and (max-width: 580px) {
+                  width: 80%;
+                  display: flex;
+                  flex-direction: column;
+                  height: auto;
+
+                  @each $element, $font, $color in (span, 6vw, white), (p , 4vw, white),
+                          (button, 3vw, green) {
+                            > #{$element} {
+                              font-size: $font;
+                              color: $color;
+                              padding: 2vw 0;
+                            }
+                          }
+                }
       }
+
+      div.signup_img {
+        width: 40vw;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @media screen and (max-width: 580px) {
+          width: 60vw;
+          margin: 3vw 0;
+        }
+      }
+
+
+      @media screen and (max-width: 580px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+
     }
 
 
@@ -227,6 +270,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
       }
 
       div.percent_text {
+        width: 40vw;
         font-family: Tahoma, Geneva, sans-serif;
         line-height: 1.6;
         letter-spacing: 0.1vw;
@@ -258,13 +302,48 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
           }
         }
 
+        @media screen and (max-width: 580px) {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          height: auto;
 
+          @each $element, $font in (h3, 6vw), (p , 4vw),
+                  (button, 3vw) {
+                    > #{$element} {
+                      font-size: $font;
+                      padding: 2vw 0;
+                    }
+                  }
+        }
+
+
+      }
+
+      div.percent_img {
+        width: 35vw;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @media screen and (max-width: 580px) {
+          width: 60vw;
+          margin: 5vw 0;
+        }
+      }
+
+      @media screen and (max-width: 580px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
       }
     }
 
-
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     section.brain {
-      height: 55vw;
       background: darken(white, 4%);
       display: flex;
       flex-direction: column;
@@ -272,8 +351,26 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
       align-items: center;
 
 
+      div.brain_img {
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @media screen and (max-width: 580px) {
+          width: 35vw;
+          margin-top: 3vw;
+        }
+      }
+
+
       h1 {
         font-size: 4vw;
+
+        @media screen and (max-width: 580px) {
+          font-size: 6vw;
+        }
       }
 
 
@@ -290,16 +387,45 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
           text-align: center;
           line-height: 1.6;
           color: lighten(black, 45%);
+
+          @media screen and (max-width: 580px) {
+            width: 80%;
+            font-size: 4vw;
+          }
+        }
+
+        @media screen and (max-width: 580px) {
+          flex-direction: column;
+          align-items: center;
         }
 
 
       }
+
+
     }
 
     section.wave {
       text-align: center;
 
 
+
+      div:first-of-type {
+        height: 9.3vw;
+        width: 9.4vw;
+        display: inline-block;
+
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @media screen and (max-width: 580px) {
+          width: 20vw;
+          height: 21vw;
+        }
+      }
 
 
       div.wave_img {
@@ -317,10 +443,18 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
         h1 {
           font-size: 3vw;
+
+          @media screen and (max-width: 580px) {
+            font-size: 6vw;
+          }
         }
 
         p {
           font-size: 1.8vw;
+
+          @media screen and (max-width: 580px) {
+            font-size: 4vw;
+          }
         }
       }
 
@@ -334,6 +468,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
         letter-spacing: 0.05vw;
 
         div.kopf_text {
+          height: auto;
           width: 40vw;
           display: flex;
           flex-direction: column;
@@ -345,12 +480,20 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
             font-size: 3vw;
             font-weight: 200;
             color: lighten(green, 10%);
+
+            @media screen and (max-width: 580px) {
+              font-size: 6vw;
+            }
           }
 
           p {
             font-size: 1.8vw;
             font-weight: 200;
             color: lighten(black, 15%);
+
+            @media screen and (max-width: 580px) {
+              font-size: 4vw;
+            }
           }
 
           a {
@@ -358,12 +501,32 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
             color: lighten(green, 3%);
             font-weight: 700;
             text-decoration: none;
+
+            @media screen and (max-width: 580px) {
+              font-size: 2.5vw;
+            }
+          }
+
+          @media screen and (max-width: 580px) {
+            width: 80%;
+            text-align: center;
           }
         }
 
 
         div.kopf_img {
           width: 40vw;
+
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        @media screen and (max-width: 580px) {
+          flex-direction: column-reverse;
+          align-items: center;
         }
       }
 
@@ -371,7 +534,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
       div.premium {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 90vw;
         margin: 10vw auto;
         line-height: 1.6;
@@ -409,6 +572,12 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
         div.premium_img {
           width: 40vw;
+
+
+          img {
+            width: 25vw;
+            height: 25vw;
+          }
         }
       }
 
@@ -453,6 +622,11 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
         div.business_img {
           width: 40vw;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
       }
 
@@ -486,239 +660,59 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
       margin-top: 20vw;
     }
 
-    @keyframes one {
-      -5% {opacity: 1;}
-      0% {opacity: 1;}
-      5% {opacity: 1;}
-      11% {opacity: 1;}
-      16% {opacity: 1;}
-      22% {opacity: 0.4;}
-      28% {opacity: 0.4;}
-      33% {opacity: 0.4;}
-      38% {opacity: 0.4;}
-      43% {opacity: 0.4;}
-      48% {opacity: 0.4;}
-      55% {opacity: 0.4;}
-      60% {opacity: 0.4;}
-      65% {opacity: 0.4;}
-      71% {opacity: 0.4;}
-      78% {opacity: 0.4;}
-      83% {opacity: 0.4;}
-      89% {opacity: 0.4;}
-      95% {opacity: 0.4;}
+
+    // @keyframes img_animation {
+    //   5% {opacity: 0.4;}
+    //   24% {opacity: 0.4;}
+    //   25% {opacity: 1;}
+    //   35% {opacity: 1;}
+    //   36% {opacity: 0.4;}
+    //   50% {opacity: 0.4;}
+    //   75% {opacity: 0.4;}
+    //   100% {opacity: 0.4;}
+    // }
+
+    @keyframes img_animation {
+      5% {opacity: 0.4;}
+      25% {opacity: 1;}
+      28% {opacity: 1;}
+      29% {opacity: 0.4;}
+      50% {opacity: 0.4;}
+      51% {opacity: 0.4;}
+      75% {opacity: 0.4;}
+
       100% {opacity: 0.4;}
     }
 
 
-    // @keyframes pone {
-    //   -5% {display: block;}
-    //   0% {display: block;}
-    //   5% {display: block;}
-    //   11% {display: block;}
-    //   16% {display: block;}
-    //   22% {display: none;}
-    //   28% {display: none;}
-    //   33% {display: none;}
-    //   38% {display: none;}
-    //   43% {display: none;}
-    //   48% {display: none;}
-    //   55% {display: none;}
-    //   60% {display: none;}
-    //   65% {display: none;}
-    //   71% {display: none;}
-    //   78% {display: none;}
-    //   83% {display: none;}
-    //   89% {display: none;}
-    //   95% {display: none;}
-    //   100% {display: none;}
+
+
+    @keyframes p_animation {
+      5% {opacity: 0;}
+      25% {opacity: 1;}
+      26% {opacity: 0;}
+      50% {opacity: 0;}
+      75% {opacity: 0;}
+      100% {opacity: 0;}
+    }
+
+    //
+    // @keyframes p_animation {
+    //   5% {opacity: 0;}
+    //   25% {opacity: 1;}
+    //   28% {opacity: 1;}
+    //   40% {opacity: 1;}
+    //   45% {opacity: 0;}
+    //   50% {opacity: 0;}
+    //   75% {opacity: 0;}
+    //   100% {opacity: 0;}
     // }
 
 
 
-        @keyframes two {
-          0% {opacity: 0.4;}
-          5% {opacity: 0.4;}
-          11% {opacity: 0.4;}
-          16% {opacity: 1;}
-          22% {opacity: 1;}
-          28% {opacity: 1;}
-          33% {opacity: 0.4;}
-          38% {opacity: 0.4;}
-          43% {opacity: 0.4;}
-          48% {opacity: 0.4;}
-          55% {opacity: 0.4;}
-          60% {opacity: 0.4;}
-          65% {opacity: 0.4;}
-          71% {opacity: 0.4;}
-          78% {opacity: 0.4;}
-          83% {opacity: 0.4;}
-          89% {opacity: 0.4;}
-          95% {opacity: 0.4;}
-          100% {opacity: 0.4;}
-        }
-
-        // @keyframes ptwo {
-        //   0% {display: none;}
-        //   5% {display: none;}
-        //   11% {display: none;}
-        //   16% {display: block;}
-        //   22% {display: block;}
-        //   28% {display: block;}
-        //   33% {display: none;}
-        //   38% {display: none;}
-        //   43% {display: none;}
-        //   48% {display: none;}
-        //   55% {display: none;}
-        //   60% {display: none;}
-        //   65% {display: none;}
-        //   71% {display: none;}
-        //   78% {display: none;}
-        //   83% {display: none;}
-        //   89% {display: none;}
-        //   95% {display: none;}
-        //   100% {display: none;}
-        // }
+// -------------------------------------------------------------------
 
 
-
-
-
-        @keyframes three {
-          0% {opacity: 0.4;}
-          5% {opacity: 0.4;}
-          11% {opacity: 0.4;}
-          16% {opacity: 0.4;}
-          22% {opacity: 0.4;}
-          28% {opacity: 0.4;}
-          33% {opacity: 1;}
-          38% {opacity: 1;}
-          43% {opacity: 1;}
-          48% {opacity: 1;}
-          55% {opacity: 0.4;}
-          60% {opacity: 0.4;}
-          65% {opacity: 0.4;}
-          71% {opacity: 0.4;}
-          78% {opacity: 0.4;}
-          83% {opacity: 0.4;}
-          89% {opacity: 0.4;}
-          95% {opacity: 0.4;}
-          100% {opacity: 0.4;}
-        }
-
-        // @keyframes pthree {
-        //   0% {display: none;}
-        //   5% {display: none;}
-        //   11% {display: none;}
-        //   16% {display: none;}
-        //   22% {display: none;}
-        //   28% {display: none;}
-        //   33% {display: block;}
-        //   38% {display: block;}
-        //   43% {display: block;}
-        //   48% {display: block;}
-        //   55% {display: none;}
-        //   60% {display: none;}
-        //   65% {display: none;}
-        //   71% {display: none;}
-        //   78% {display: none;}
-        //   83% {display: none;}
-        //   89% {display: none;}
-        //   95% {display: none;}
-        //   100% {display: none;}
-        // }
-
-
-
-
-
-
-        @keyframes four {
-          0% {opacity: 0.4;}
-          5% {opacity: 0.4;}
-          11% {opacity: 0.4;}
-          16% {opacity: 0.4;}
-          22% {opacity: 0.4;}
-          28% {opacity: 0.4;}
-          33% {opacity: 0.4;}
-          38% {opacity: 0.4;}
-          43% {opacity: 0.4;}
-          48% {opacity: 0.4;}
-          55% {opacity: 1;}
-          60% {opacity: 1;}
-          65% {opacity: 1;}
-          71% {opacity: 0.4;}
-          78% {opacity: 0.4;}
-          83% {opacity: 0.4;}
-          89% {opacity: 0.4;}
-          95% {opacity: 0.4;}
-          100% {opacity: 0.4;}
-        }
-
-        @keyframes five {
-          0% {opacity: 0.4;}
-          5% {opacity: 0.4;}
-          11% {opacity: 0.4;}
-          16% {opacity: 0.4;}
-          22% {opacity: 0.4;}
-          28% {opacity: 0.4;}
-          33% {opacity: 0.4;}
-          38% {opacity: 0.4;}
-          43% {opacity: 0.4;}
-          48% {opacity: 0.4;}
-          55% {opacity: 0.4;}
-          60% {opacity: 0.4;}
-          65% {opacity: 0.4;}
-          71% {opacity: 1;}
-          78% {opacity: 1;}
-          83% {opacity: 1;}
-          89% {opacity: 0.4;}
-          95% {opacity: 0.4;}
-          100% {opacity: 0.4;}
-        }
-
-        @keyframes six {
-          0% {opacity: 0.4;}
-          5% {opacity: 0.4;}
-          11% {opacity: 0.4;}
-          16% {opacity: 0.4;}
-          22% {opacity: 0.4;}
-          28% {opacity: 0.4;}
-          33% {opacity: 0.4;}
-          38% {opacity: 0.4;}
-          43% {opacity: 0.4;}
-          48% {opacity: 0.4;}
-          55% {opacity: 0.4;}
-          60% {opacity: 0.4;}
-          65% {opacity: 0.4;}
-          71% {opacity: 0.4;}
-          78% {opacity: 0.4;}
-          83% {opacity: 1;}
-          89% {opacity: 1;}
-          95% {opacity: 1;}
-          100% {opacity: 0.4;}
-        }
-
-        @keyframes click {
-          0% {opacity: 1; display: block;}
-          5% {opacity: 1; display: block;}
-          11% {opacity: 1; display: block;}
-          16% {opacity: 1; display: block;}
-          22% {opacity: 0.4; display: block;}
-          28% {opacity: 0.4; display: block;}
-          33% {opacity: 0.4; display: block;}
-          38% {opacity: 0.4; display: block;}
-          43% {opacity: 0.4; display: block;}
-          48% {opacity: 0.4; display: block;}
-          55% {opacity: 0.4; display: block;}
-          60% {opacity: 0.4; display: block;}
-          65% {opacity: 0.4; display: block;}
-          71% {opacity: 0.4; display: block;}
-          78% {opacity: 0.4; display: block;}
-          83% {opacity: 0.4; display: block;}
-          89% {opacity: 0.4; display: block;}
-          95% {opacity: 0.4; display: block;}
-          100% {opacity: 0.4; display: block;}
-        }
 
     section.animation {
       position: relative;
@@ -748,72 +742,23 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 
 
-        // @each $num, $button, $text, $area1, $area2 in (1, button, p, business, text1),
-        //  (2, button, p, verge, text2),
-        //   (3, button, p, webby, text3), (4, button, p, forbes, text4),
-        //    (5, button, p, cloud, text5), (6, button, p, manuel, text6) {
-        //     @if #{$button} == button {
-        //       button:nth-of-type(#{$num}) {
-        //         grid-area: $area1;
-        //         }
-        //     } @else if #{$text} == p {
-        //         p:nth-of-type(#{$num}) {
-        //             grid-area: $area2;
-        //             }
-        //           }
-        //
-        //   }
+        @each $num, $button, $text, $area1, $area2 in (1, button, p, business, text1),
+         (2, button, p, verge, text2),
+          (3, button, p, webby, text3), (4, button, p, forbes, text4),
+           (5, button, p, cloud, text5), (6, button, p, manuel, text6) {
+
+              #{$button}:nth-of-type(#{$num}) {
+                grid-area: $area1;
+                }
+
+
+                #{$text}:nth-of-type(#{$num}) {
+                    grid-area: $area2;
+                    }
+          }
 
 
 
-
-      button.animation_img1 {
-        grid-area: business;
-      }
-
-      button.animation_img2 {
-        grid-area: verge;
-      }
-
-      button.animation_img3 {
-        grid-area: webby;
-      }
-
-      button.animation_img4 {
-        grid-area: forbes;
-      }
-
-      button.animation_img5 {
-        grid-area: cloud;
-      }
-
-      button.animation_img6 {
-        grid-area: manuel;
-      }
-
-      p.text1 {
-        grid-area: text1;
-      }
-
-      p.text2 {
-        grid-area: text2;
-      }
-
-      p.text3 {
-        grid-area: text3;
-      }
-
-      p.text4 {
-        grid-area: text4;
-      }
-
-      p.text5 {
-        grid-area: text5;
-      }
-
-      p.text6 {
-        grid-area: text6;
-      }
 
       div.empty1 {
         grid-area: empty1;
@@ -826,14 +771,33 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 
 
-      @each $num, $animation in (1, one), (2, two), (3, three), (4, four),
-                                (5, five), (6, six) {
+      @each $num, $delay in (1, 1), (2, 4), (3, 9), (4, 13),
+                                (5, 17), (6, 21) {
                                   button:nth-of-type(#{$num}) {
-                                    animation: $animation 10s linear infinite;
+                                    animation: img_animation 22s linear infinite;
+                                    animation-delay: $delay + s;
                                   }
                                 }
 
 
+
+
+
+      @each $num, $delay in (1, 1), (2, 4), (3, 9), (4, 13),
+                                (5, 17), (6, 21) {
+                                  p:nth-of-type(#{$num}) {
+                                    animation: p_animation 24s linear infinite;
+                                    animation-delay: $delay + s;
+                                  }
+                                }
+
+
+
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
 
 
           p {
@@ -842,8 +806,8 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
               font-weight: 200;
               line-height: 1.8;
               letter-spacing: 0.1vw;
-              display: none;
-              position: relative;
+              position: absolute;
+              opacity: 0;
               top: 5vw;
               left: 0;
           }
@@ -863,23 +827,25 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
           @for $num from 1 through 6 {
             &:nth-of-type(#{$num}):focus {
-              // animation: click 10s linear;
+              outline: none;
 
               ~ p:nth-of-type(#{$num}) {
-                display: block;
+                opacity: 1;
               }
             }
           }
         }
+
+
+
+
+
     }
 
 
 
 
-    div.example {
-      margin: 20vw;
-      background: lime;
-    }
+
 
 footer > hr {
     color: green;
@@ -1036,4 +1002,9 @@ footer > hr {
           font-size: 4vw;
         }
     }
+
+
+
+
+
 }
