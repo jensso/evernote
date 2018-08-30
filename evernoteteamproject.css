@@ -20,6 +20,8 @@ body nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
+    margin-bottom: 52vw;
   }
 }
 
@@ -46,12 +48,24 @@ body nav div:first-of-type button {
   border: none;
   background: transparent;
   font-weight: bold;
-  font-size: 1.5Vw;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 600px) {
+  body nav div:first-of-type button {
+    font-size: 4vw;
+  }
 }
 
 body nav div:first-of-type button i {
   font-size: 2vw;
   margin-right: 1vw;
+}
+
+@media (max-width: 600px) {
+  body nav div:first-of-type button i {
+    font-size: 5vw;
+  }
 }
 
 body nav div:first-of-type button:hover {
@@ -84,6 +98,13 @@ body nav div:last-of-type {
 
 body nav div:last-of-type span {
   font-size: 1vw;
+}
+
+@media (max-width: 600px) {
+  body nav div:last-of-type span {
+    margin-right: 3vw;
+    font-size: 3vw;
+  }
 }
 
 body nav div:last-of-type button {
