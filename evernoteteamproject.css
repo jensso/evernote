@@ -954,6 +954,10 @@ body section.animation button:nth-of-type(6):focus ~ p:nth-of-type(6) {
   opacity: 1;
 }
 
+body div.empty_space {
+  height: 20vw;
+}
+
 body footer > hr {
   color: green;
   width: 90%;
