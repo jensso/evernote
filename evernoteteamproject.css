@@ -184,7 +184,6 @@ body section.percent div.percent_img img {
 }
 
 body section.brain {
-  height: 55vw;
   background: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -192,13 +191,26 @@ body section.brain {
   align-items: center;
 }
 
-body section.brain div:first-of-type img {
+body section.brain div.brain_img img {
   width: 100%;
   height: 100%;
 }
 
+@media screen and (max-width: 580px) {
+  body section.brain div.brain_img {
+    width: 35vw;
+    margin-top: 3vw;
+  }
+}
+
 body section.brain h1 {
   font-size: 4vw;
+}
+
+@media screen and (max-width: 580px) {
+  body section.brain h1 {
+    font-size: 6vw;
+  }
 }
 
 body section.brain div.brain_text {
@@ -216,6 +228,20 @@ body section.brain div.brain_text div {
   color: #737373;
 }
 
+@media screen and (max-width: 580px) {
+  body section.brain div.brain_text div {
+    width: 80%;
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.brain div.brain_text {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 body section.wave {
   text-align: center;
 }
@@ -229,6 +255,13 @@ body section.wave div:first-of-type {
 body section.wave div:first-of-type img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div:first-of-type {
+    width: 20vw;
+    height: 21vw;
+  }
 }
 
 body section.wave div.wave_img {
@@ -247,8 +280,20 @@ body section.wave div.wave_text h1 {
   font-size: 3vw;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.wave_text h1 {
+    font-size: 6vw;
+  }
+}
+
 body section.wave div.wave_text p {
   font-size: 1.8vw;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.wave_text p {
+    font-size: 4vw;
+  }
 }
 
 body section.wave div.kopf {
@@ -261,6 +306,7 @@ body section.wave div.kopf {
 }
 
 body section.wave div.kopf div.kopf_text {
+  height: auto;
   width: 40vw;
   display: flex;
   flex-direction: column;
@@ -275,10 +321,22 @@ body section.wave div.kopf div.kopf_text h3 {
   color: #00b300;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf div.kopf_text h3 {
+    font-size: 6vw;
+  }
+}
+
 body section.wave div.kopf div.kopf_text p {
   font-size: 1.8vw;
   font-weight: 200;
   color: #262626;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf div.kopf_text p {
+    font-size: 4vw;
+  }
 }
 
 body section.wave div.kopf div.kopf_text a {
@@ -288,6 +346,19 @@ body section.wave div.kopf div.kopf_text a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf div.kopf_text a {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf div.kopf_text {
+    width: 80%;
+    text-align: center;
+  }
+}
+
 body section.wave div.kopf div.kopf_img {
   width: 40vw;
 }
@@ -295,6 +366,13 @@ body section.wave div.kopf div.kopf_img {
 body section.wave div.kopf div.kopf_img img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.kopf {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 body section.wave div.premium {
