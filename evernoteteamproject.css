@@ -1,9 +1,8 @@
 body nav {
-  margin-top: -1vw;
-  padding-bottom: 2vw;
   margin-right: 2vw;
   background: white;
   position: fixed;
+  top: 0;
   width: 100%;
   height: 8vw;
   display: flex;
@@ -11,9 +10,18 @@ body nav {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   body nav {
+<<<<<<< HEAD
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin-bottom: 52vw;
+=======
     flex-direction: column;
+>>>>>>> d904673eb48e5147bbdfbfce44d20d0e60a52aa4
   }
 }
 
@@ -29,17 +37,35 @@ body nav div button {
   width: auto;
 }
 
+@media (max-width: 600px) {
+  body nav div button {
+    font-size: 2vw;
+  }
+}
+
 body nav div:first-of-type button {
   cursor: pointer;
   border: none;
   background: transparent;
   font-weight: bold;
-  font-size: 1.5Vw;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 600px) {
+  body nav div:first-of-type button {
+    font-size: 4vw;
+  }
 }
 
 body nav div:first-of-type button i {
   font-size: 2vw;
   margin-right: 1vw;
+}
+
+@media (max-width: 600px) {
+  body nav div:first-of-type button i {
+    font-size: 5vw;
+  }
 }
 
 body nav div:first-of-type button:hover {
@@ -72,6 +98,13 @@ body nav div:last-of-type span {
   font-size: 1vw;
 }
 
+@media (max-width: 600px) {
+  body nav div:last-of-type span {
+    margin-right: 3vw;
+    font-size: 3vw;
+  }
+}
+
 body nav div:last-of-type button {
   margin-left: 1vw;
   padding: 5px 30px;
@@ -96,26 +129,40 @@ body nav .dropdown1:hover .dropdown-content1 {
 }
 
 body nav .dropdown-content1 {
+  -webkit-transform: translateX(-2vw);
+          transform: translateX(-2vw);
   position: absolute;
   height: auto;
-  width: 11vw;
+  width: 10vw;
   background: white;
   display: none;
-  position: absolute;
   border-radius: 3px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
+@media (max-width: 600px) {
+  body nav .dropdown-content1 {
+    width: auto;
+    -webkit-transform: translateX(-10vw);
+            transform: translateX(-10vw);
+  }
+}
+
 body nav .dropdown-content1 a {
-  margin-top: 5px;
   text-decoration: none;
-  height: 2vw;
+  height: auto;
   color: #00a82d;
   padding: 10px 20px;
   display: block;
   text-align: left;
   border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  body nav .dropdown-content1 a {
+    font-size: 2vw;
+  }
 }
 
 body nav .dropdown-content1 a:hover {
@@ -128,26 +175,40 @@ body nav .dropdown2:hover .dropdown-content2 {
 }
 
 body nav .dropdown-content2 {
+  -webkit-transform: translateX(-2vw);
+          transform: translateX(-2vw);
   position: absolute;
   height: auto;
-  width: 11vw;
+  width: 10vw;
   background: white;
   display: none;
-  position: absolute;
   border-radius: 3px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
+@media (max-width: 600px) {
+  body nav .dropdown-content2 {
+    width: auto;
+    -webkit-transform: translateX(-10vw);
+            transform: translateX(-10vw);
+  }
+}
+
 body nav .dropdown-content2 a {
-  margin-top: 5px;
   text-decoration: none;
-  height: 2vw;
+  height: auto;
   color: #00a82d;
   padding: 10px 20px;
   display: block;
   text-align: left;
   border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  body nav .dropdown-content2 a {
+    font-size: 2vw;
+  }
 }
 
 body nav .dropdown-content2 a:hover {
