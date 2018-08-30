@@ -1,6 +1,5 @@
 body section.signup {
   height: 50vw;
-  width: 100%;
   background: green;
   display: flex;
   padding: 2vw 0;
@@ -9,6 +8,7 @@ body section.signup {
 }
 
 body section.signup div.desktop_text {
+  width: 40vw;
   line-height: 1.6;
   letter-spacing: 0.07vw;
   font-family: Arial, Helvetica, sans-serif;
@@ -49,6 +49,7 @@ body section.signup div:last-of-type img {
 
 @media screen and (max-width: 580px) {
   body section.signup {
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -102,26 +103,6 @@ body section.percent div.percent_text button:hover {
 body section.percent div:last-of-type img {
   width: 100%;
   height: 100%;
-}
-
-@media screen and (max-width: 580px) {
-  body section.percent {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    height: auto;
-  }
-  body section.percent div.percent_text {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  body section.percent div.percent_text h3 {
-    font-size: 5vw;
-  }
-  body section.percent div.percent_text p {
-    font-size: 3vw;
-  }
 }
 
 body section.brain {
