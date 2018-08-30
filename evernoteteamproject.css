@@ -1050,10 +1050,18 @@ body .div_footer_part1 h2 {
   align-items: flex-start;
   justify-content: center;
   color: green;
-  margin: 1.5vw;
-  font-size: 2.5vw;
+  margin: 2.5vw;
+  font-size: 3.5vw;
   font-family: arial;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 600px) {
+  body .div_footer_part1 h2 {
+    display: block;
+    float: left;
+    font-size: 8vw;
+  }
 }
 
 body .div_footer_part1 h2 img {
@@ -1077,14 +1085,30 @@ body .div_footer_part1 ul h6 {
   margin-bottom: 2vw;
 }
 
+@media screen and (max-width: 600px) {
+  body .div_footer_part1 ul h6 {
+    font-size: 6vw;
+  }
+}
+
 body .div_footer_part1 ul button {
   background-color: white;
   border-color: green;
   color: green;
   margin: 2vw 4vw;
-  width: 8vw;
-  height: 4vw;
+  width: 10vw;
+  height: 5vw;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  body .div_footer_part1 ul button {
+    color: grey;
+    font-size: 1vw;
+    float: left;
+    width: 25vw;
+    height: 10vw;
+  }
 }
 
 body .div_footer_part1 ul button:hover {
@@ -1107,21 +1131,59 @@ body .div_footer_part1 ul li:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  body .div_footer_part1 {
+    display: block;
+    float: left;
+    font-size: 4vw;
+  }
+}
+
 body .div_footer_part2 {
   display: flex;
   justify-content: flex-end;
 }
 
+body .div_footer_part2 p {
+  width: 15vw;
+}
+
 body .div_footer_part2 select {
-  width: 10vw;
+  width: 15vw;
+  height: 7vw;
   padding: 1vw;
   margin-left: 1vw;
   margin-right: 50vw;
   border-color: green;
 }
 
+@media screen and (max-width: 600px) {
+  body .div_footer_part2 select {
+    display: block;
+    float: left;
+    font-size: 4vw;
+    margin-right: 1vw;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body .div_footer_part2 {
+    display: block;
+    float: left;
+    font-size: 4vw;
+  }
+}
+
 body i {
+  padding: 1vw;
   margin: 1vw auto;
+}
+
+@media screen and (max-width: 600px) {
+  body i {
+    display: inline-block;
+  }
 }
 
 body .footnote {
@@ -1149,25 +1211,9 @@ body .footnote li a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  body .div_footer_part1, body .div_footer_part2, body .footnote {
+  body .footnote {
     display: block;
-    background-color: black;
-    color: white;
     float: left;
-    width: 100%;
-  }
-  body .div_footer_part1 hr, body .div_footer_part2 hr, body .footnote hr {
-    width: 90%;
-    color: green;
-  }
-  body .div_footer_part1 > ul > button {
-    width: 50%;
-    height: 8vw;
-    font-size: 1.5vw;
-  }
-  body .div_footer_part1 > h2 {
-    color: green;
-    font-size: 6vw;
-    text-shadow: 0.3vw 0.3vw white;
+    font-size: 4vw;
   }
 }
