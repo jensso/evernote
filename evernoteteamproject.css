@@ -555,14 +555,14 @@ body section.wave div.kopf div.kopf_text a {
 
 @media screen and (max-width: 580px) {
   body section.wave div.kopf div.kopf_text a {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 }
 
 @media screen and (max-width: 580px) {
   body section.wave div.kopf div.kopf_text {
     width: 80%;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -607,10 +607,22 @@ body section.wave div.premium div.premium_text h3 {
   color: #00b300;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.premium div.premium_text h3 {
+    font-size: 6vw;
+  }
+}
+
 body section.wave div.premium div.premium_text p {
   font-size: 1.8vw;
   font-weight: 200;
   color: #262626;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.premium div.premium_text p {
+    font-size: 4vw;
+  }
 }
 
 body section.wave div.premium div.premium_text a {
@@ -620,6 +632,18 @@ body section.wave div.premium div.premium_text a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.premium div.premium_text a {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.premium div.premium_text {
+    width: 100%;
+  }
+}
+
 body section.wave div.premium div.premium_img {
   width: 40vw;
 }
@@ -627,6 +651,28 @@ body section.wave div.premium div.premium_img {
 body section.wave div.premium div.premium_img img {
   width: 25vw;
   height: 25vw;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.premium div.premium_img img {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.premium div.premium_img {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.premium {
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+  }
 }
 
 body section.wave div.business {
@@ -653,10 +699,22 @@ body section.wave div.business div.business_text h3 {
   color: #00b300;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.business div.business_text h3 {
+    font-size: 6vw;
+  }
+}
+
 body section.wave div.business div.business_text p {
   font-size: 1.8vw;
   font-weight: 200;
   color: #262626;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.business div.business_text p {
+    font-size: 4vw;
+  }
 }
 
 body section.wave div.business div.business_text a {
@@ -666,6 +724,20 @@ body section.wave div.business div.business_text a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.business div.business_text a {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.business div.business_text {
+    width: 80vw;
+    text-align: left;
+    height: auto;
+  }
+}
+
 body section.wave div.business div.business_img {
   width: 40vw;
 }
@@ -673,6 +745,14 @@ body section.wave div.business div.business_img {
 body section.wave div.business div.business_img img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 580px) {
+  body section.wave div.business {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 15vw;
+  }
 }
 
 body section.wave div.compare {
@@ -696,10 +776,25 @@ body section.wave div.compare button:hover {
   background: #00cd00;
 }
 
+@media screen and (max-width: 580px) {
+  body section.wave div.compare button {
+    font-size: 3vw;
+    width: 80vw;
+    padding: 2vw;
+    margin-top: 10vw;
+  }
+}
+
 body div.heart {
   text-align: center;
   margin: 5vw;
   margin-top: 20vw;
+}
+
+@media screen and (max-width: 580px) {
+  body div.heart {
+    margin: 20vw auto;
+  }
 }
 
 @keyframes img_animation {
