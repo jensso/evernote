@@ -15,7 +15,7 @@ body {
     }
 
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    div { 
+    div {
         padding-top: 3vw;
         text-align: center;
         list-style: none;
@@ -43,7 +43,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
                         margin-right: 1vw;
                         @media (max-width: 600px) {
                           font-size: 5vw;
-      
+
                       }
                }
                &:hover {
@@ -72,7 +72,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
             margin-right: 3vw;
             font-size: 3vw;
         }
-          
+
           font-size:1vw;}
         button{
         margin-left: 1vw;
@@ -158,7 +158,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
   a {
     @media (max-width: 600px) {
       font-size: 2vw;
-  
+
     }
       text-decoration: none;
       height: auto;
@@ -973,37 +973,45 @@ footer > hr {
     .div_footer_part2 {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
       p {
+        margin-left: 4vw;
         width: 15vw;
       }
       select {
+        display: inline-block;
         width: 15vw;
-        height: 7vw;
+        height: 5vw;
         padding: 1vw;
-        margin-left: 1vw;
-        margin-right: 50vw;
         border-color: green;
+        background: silver;
+
         @media screen and (max-width: 600px) {
-          display: block;
           float: left;
           font-size: 4vw;
-          margin-right: 1vw;
+          margin-right: 5vw;
           width: 40%;
         }
-      }
-      @media screen and (max-width: 600px) {
-        display: block;
-        float: left;
-        font-size: 4vw;
-      }
-    }
-      i {
-        padding: 1vw;
-        margin: 1vw auto;
-        @media screen and (max-width: 600px) {
-          display: inline-block;
+        option {
+          font-family: verdana;
+          color: green;
+          background: lightgreen;
         }
       }
+
+      span {
+        margin-left: 30vw;
+       i {
+        padding: 1vw;
+        margin: 1vw;
+
+        &:hover {
+          color: red;
+          cursor: pointer;
+          }
+        }
+      }
+    }
     .footnote {
       display: flex;
       justify-content: flex-end;

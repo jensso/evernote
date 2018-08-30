@@ -12,16 +12,9 @@ body nav {
 
 @media (max-width: 600px) {
   body nav {
-<<<<<<< HEAD
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     position: relative;
     margin-bottom: 52vw;
-=======
-    flex-direction: column;
->>>>>>> d904673eb48e5147bbdfbfce44d20d0e60a52aa4
   }
 }
 
@@ -129,8 +122,7 @@ body nav .dropdown1:hover .dropdown-content1 {
 }
 
 body nav .dropdown-content1 {
-  -webkit-transform: translateX(-2vw);
-          transform: translateX(-2vw);
+  transform: translateX(-2vw);
   position: absolute;
   height: auto;
   width: 10vw;
@@ -144,8 +136,7 @@ body nav .dropdown-content1 {
 @media (max-width: 600px) {
   body nav .dropdown-content1 {
     width: auto;
-    -webkit-transform: translateX(-10vw);
-            transform: translateX(-10vw);
+    transform: translateX(-10vw);
   }
 }
 
@@ -175,8 +166,7 @@ body nav .dropdown2:hover .dropdown-content2 {
 }
 
 body nav .dropdown-content2 {
-  -webkit-transform: translateX(-2vw);
-          transform: translateX(-2vw);
+  transform: translateX(-2vw);
   position: absolute;
   height: auto;
   width: 10vw;
@@ -190,8 +180,7 @@ body nav .dropdown-content2 {
 @media (max-width: 600px) {
   body nav .dropdown-content2 {
     width: auto;
-    -webkit-transform: translateX(-10vw);
-            transform: translateX(-10vw);
+    transform: translateX(-10vw);
   }
 }
 
@@ -1203,48 +1192,50 @@ body .div_footer_part1 ul li:hover {
 body .div_footer_part2 {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 body .div_footer_part2 p {
+  margin-left: 4vw;
   width: 15vw;
 }
 
 body .div_footer_part2 select {
+  display: inline-block;
   width: 15vw;
-  height: 7vw;
+  height: 5vw;
   padding: 1vw;
-  margin-left: 1vw;
-  margin-right: 50vw;
   border-color: green;
+  background: silver;
 }
 
 @media screen and (max-width: 600px) {
   body .div_footer_part2 select {
-    display: block;
     float: left;
     font-size: 4vw;
-    margin-right: 1vw;
+    margin-right: 5vw;
     width: 40%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  body .div_footer_part2 {
-    display: block;
-    float: left;
-    font-size: 4vw;
-  }
+body .div_footer_part2 select option {
+  font-family: verdana;
+  color: green;
+  background: lightgreen;
 }
 
-body i {
+body .div_footer_part2 span {
+  margin-left: 30vw;
+}
+
+body .div_footer_part2 span i {
   padding: 1vw;
-  margin: 1vw auto;
+  margin: 1vw;
 }
 
-@media screen and (max-width: 600px) {
-  body i {
-    display: inline-block;
-  }
+body .div_footer_part2 span i:hover {
+  color: red;
+  cursor: pointer;
 }
 
 body .footnote {
