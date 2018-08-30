@@ -108,26 +108,19 @@ body section.percent div:last-of-type img {
   body section.percent {
     display: flex;
     flex-direction: column;
-    text-align: center;
     height: auto;
-    width: 100%;
     height: auto;
-    margin: auto 0;
   }
   body section.percent div.percent_text {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     height: auto;
   }
   body section.percent div.percent_text h3 {
     font-size: 5vw;
-    flex-grow: 1;
-    width: 100%;
   }
   body section.percent div.percent_text p {
     font-size: 3vw;
-    width: 100vw;
   }
 }
 
