@@ -736,40 +736,19 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
       25% {opacity: 1;}
       28% {opacity: 1;}
       29% {opacity: 0.4;}
-      50% {opacity: 0.4;}
-      51% {opacity: 0.4;}
-      75% {opacity: 0.4;}
-      100% {opacity: 0.4;}
     }
 
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    // @keyframes p_animation {
-    //   5% {opacity: 0;}
-    //   25% {opacity: 1;}
-    //   26% {opacity: 0;}
-    //   50% {opacity: 0;}
-    //   75% {opacity: 0;}
-    //   100% {opacity: 0;}
-    // }
-
     @keyframes p_animation {
       5% {opacity: 0;}
       22% {transform: rotate(360deg);opacity: 1;}
-      23% {transform: rotate(360deg); opacity: 1;}
-      24% {transform: rotate(360deg); opacity: 1;}
       25% {transform: rotate(360deg); opacity: 1;}
-      26% {opacity: 0;}
-      50% {opacity: 0;}
-      75% {opacity: 0;}
-      100% {opacity: 0;}
+      26% {opacity: 0; transform: rotate(360deg);}
     }
 
-// -------------------------------------------------------------------
-
-
-
+// ---------------------------------------------------------------
     section.animation {
       position: relative;
       width: 100%;
@@ -826,32 +805,16 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 
 
-
       @each $num, $delay in (1, 1), (2, 4), (3, 9), (4, 13),
                                 (5, 17), (6, 21) {
                                   button:nth-of-type(#{$num}) {
-                                    animation: img_animation 22s linear infinite;
-                                    animation-delay: $delay + s;
+                                    animation: img_animation 22s linear $delay + s infinite;
                                   }
 
                                   p:nth-of-type(#{$num}) {
-                                    animation: p_animation 24s linear infinite;
-                                    animation-delay: $delay + s;
+                                    animation: p_animation 24s linear $delay + s infinite;
                                   }
                                 }
-
-
-
-
-
-      // @each $num, $delay in (1, 1), (2, 4), (3, 9), (4, 13),
-      //                           (5, 17), (6, 21) {
-      //                             p:nth-of-type(#{$num}) {
-      //                               animation: p_animation 24s linear infinite;
-      //                               animation-delay: $delay + s;
-      //                             }
-      //                           }
-
 
 
 
@@ -875,7 +838,6 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 
 
-
         button {
           border: none;
           opacity: 0.3;
@@ -896,9 +858,6 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
             }
           }
         }
-
-
-
 
 
     }

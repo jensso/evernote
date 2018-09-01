@@ -810,18 +810,6 @@ body div.heart {
   29% {
     opacity: 0.4;
   }
-  50% {
-    opacity: 0.4;
-  }
-  51% {
-    opacity: 0.4;
-  }
-  75% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0.4;
-  }
 }
 
 @keyframes p_animation {
@@ -832,29 +820,13 @@ body div.heart {
     transform: rotate(360deg);
     opacity: 1;
   }
-  23% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
-  24% {
-    transform: rotate(360deg);
-    opacity: 1;
-  }
   25% {
     transform: rotate(360deg);
     opacity: 1;
   }
   26% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+    transform: rotate(360deg);
   }
 }
 
@@ -927,63 +899,51 @@ body section.animation div.empty2 {
 }
 
 body section.animation button:nth-of-type(1) {
-  animation: img_animation 22s linear infinite;
-  animation-delay: 1s;
+  animation: img_animation 22s linear 1s infinite;
 }
 
 body section.animation p:nth-of-type(1) {
-  animation: p_animation 24s linear infinite;
-  animation-delay: 1s;
+  animation: p_animation 24s linear 1s infinite;
 }
 
 body section.animation button:nth-of-type(2) {
-  animation: img_animation 22s linear infinite;
-  animation-delay: 4s;
+  animation: img_animation 22s linear 4s infinite;
 }
 
 body section.animation p:nth-of-type(2) {
-  animation: p_animation 24s linear infinite;
-  animation-delay: 4s;
+  animation: p_animation 24s linear 4s infinite;
 }
 
 body section.animation button:nth-of-type(3) {
-  animation: img_animation 22s linear infinite;
-  animation-delay: 9s;
+  animation: img_animation 22s linear 9s infinite;
 }
 
 body section.animation p:nth-of-type(3) {
-  animation: p_animation 24s linear infinite;
-  animation-delay: 9s;
+  animation: p_animation 24s linear 9s infinite;
 }
 
 body section.animation button:nth-of-type(4) {
-  animation: img_animation 22s linear infinite;
-  animation-delay: 13s;
+  animation: img_animation 22s linear 13s infinite;
 }
 
 body section.animation p:nth-of-type(4) {
-  animation: p_animation 24s linear infinite;
-  animation-delay: 13s;
+  animation: p_animation 24s linear 13s infinite;
 }
 
 body section.animation button:nth-of-type(5) {
-  animation: img_animation 22s linear infinite;
-  animation-delay: 17s;
+  animation: img_animation 22s linear 17s infinite;
 }
 
 body section.animation p:nth-of-type(5) {
-  animation: p_animation 24s linear infinite;
-  animation-delay: 17s;
+  animation: p_animation 24s linear 17s infinite;
 }
 
 body section.animation button:nth-of-type(6) {
-  animation: img_animation 22s linear infinite;
-  animation-delay: 21s;
+  animation: img_animation 22s linear 21s infinite;
 }
 
 body section.animation p:nth-of-type(6) {
-  animation: p_animation 24s linear infinite;
-  animation-delay: 21s;
+  animation: p_animation 24s linear 21s infinite;
 }
 
 body section.animation img {
