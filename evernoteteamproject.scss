@@ -730,16 +730,6 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
     }
 
 
-    // @keyframes img_animation {
-    //   5% {opacity: 0.4;}
-    //   24% {opacity: 0.4;}
-    //   25% {opacity: 1;}
-    //   35% {opacity: 1;}
-    //   36% {opacity: 0.4;}
-    //   50% {opacity: 0.4;}
-    //   75% {opacity: 0.4;}
-    //   100% {opacity: 0.4;}
-    // }
 
     @keyframes img_animation {
       5% {opacity: 0.4;}
@@ -749,35 +739,32 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
       50% {opacity: 0.4;}
       51% {opacity: 0.4;}
       75% {opacity: 0.4;}
-
       100% {opacity: 0.4;}
     }
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
-    @keyframes p_animation {
-      5% {opacity: 0;}
-      25% {opacity: 1;}
-      26% {opacity: 0;}
-      50% {opacity: 0;}
-      75% {opacity: 0;}
-      100% {opacity: 0;}
-    }
-
-    //
     // @keyframes p_animation {
     //   5% {opacity: 0;}
     //   25% {opacity: 1;}
-    //   28% {opacity: 1;}
-    //   40% {opacity: 1;}
-    //   45% {opacity: 0;}
+    //   26% {opacity: 0;}
     //   50% {opacity: 0;}
     //   75% {opacity: 0;}
     //   100% {opacity: 0;}
     // }
 
-
+    @keyframes p_animation {
+      5% {opacity: 0;}
+      22% {transform: rotate(360deg);opacity: 1;}
+      23% {transform: rotate(360deg); opacity: 1;}
+      24% {transform: rotate(360deg); opacity: 1;}
+      25% {transform: rotate(360deg); opacity: 1;}
+      26% {opacity: 0;}
+      50% {opacity: 0;}
+      75% {opacity: 0;}
+      100% {opacity: 0;}
+    }
 
 // -------------------------------------------------------------------
 
@@ -846,19 +833,24 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
                                     animation: img_animation 22s linear infinite;
                                     animation-delay: $delay + s;
                                   }
-                                }
 
-
-
-
-
-      @each $num, $delay in (1, 1), (2, 4), (3, 9), (4, 13),
-                                (5, 17), (6, 21) {
                                   p:nth-of-type(#{$num}) {
                                     animation: p_animation 24s linear infinite;
                                     animation-delay: $delay + s;
                                   }
                                 }
+
+
+
+
+
+      // @each $num, $delay in (1, 1), (2, 4), (3, 9), (4, 13),
+      //                           (5, 17), (6, 21) {
+      //                             p:nth-of-type(#{$num}) {
+      //                               animation: p_animation 24s linear infinite;
+      //                               animation-delay: $delay + s;
+      //                             }
+      //                           }
 
 
 
@@ -886,7 +878,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
         button {
           border: none;
-          opacity: 0.4;
+          opacity: 0.3;
           background: white;
 
           &:hover {
