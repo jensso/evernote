@@ -812,6 +812,24 @@ body div.heart {
   }
 }
 
+@keyframes img_animation_res {
+  5% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  18% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 1;
+  }
+  29% {
+    opacity: 0;
+  }
+}
+
 @keyframes p_animation {
   5% {
     opacity: 0;
@@ -967,6 +985,14 @@ body section.animation p {
   left: 0;
 }
 
+@media screen and (max-width: 580px) {
+  body section.animation p {
+    top: 35vw;
+    font-size: 3.5vw;
+    height: auto;
+  }
+}
+
 body section.animation button {
   border: none;
   opacity: 0.3;
@@ -1024,6 +1050,49 @@ body section.animation button:nth-of-type(6):focus {
 
 body section.animation button:nth-of-type(6):focus ~ p:nth-of-type(6) {
   opacity: 1;
+}
+
+@media screen and (max-width: 580px) {
+  body section.animation button {
+    height: auto;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 5vw;
+    opacity: 0;
+  }
+  body section.animation button:nth-of-type(1) {
+    width: 40vw;
+    animation: img_animation_res 25s linear 0s infinite;
+  }
+  body section.animation button:nth-of-type(2) {
+    width: 40vw;
+    animation: img_animation_res 25s linear 4s infinite;
+  }
+  body section.animation button:nth-of-type(3) {
+    width: 36vw;
+    animation: img_animation_res 25s linear 8s infinite;
+  }
+  body section.animation button:nth-of-type(4) {
+    width: 46vw;
+    animation: img_animation_res 25s linear 12s infinite;
+  }
+  body section.animation button:nth-of-type(5) {
+    width: 28vw;
+    animation: img_animation_res 25s linear 17s infinite;
+  }
+  body section.animation button:nth-of-type(6) {
+    width: 80vw;
+    animation: img_animation_res 25s linear 21s infinite;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body section.animation {
+    display: flex;
+    flex-direction: column;
+    height: 50vw;
+  }
 }
 
 body div.empty_space {

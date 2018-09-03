@@ -737,6 +737,15 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
       28% {opacity: 1;}
       29% {opacity: 0.4;}
     }
+// ------------------------------------------------
+
+    @keyframes img_animation_res {
+      5% {opacity: 0;}
+      15% {opacity: 0;}
+      18% {opacity: 1;}
+      28% {opacity: 1;}
+      29% {opacity: 0;}
+    }
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -834,6 +843,12 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
               opacity: 0;
               top: 5vw;
               left: 0;
+
+              @media screen and (max-width: 580px) {
+                top: 35vw;
+                font-size: 3.5vw;
+                height: auto;
+              }
           }
 
 
@@ -857,12 +872,40 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
               }
             }
           }
+
+
+          @media screen and (max-width: 580px) {
+              height: auto;
+              text-align: center;
+              display: block;
+              position: absolute;
+              top: 5vw;
+              opacity: 0;
+
+              @each $num, $delay , $width in (1, 0, 40), (2, 4, 40), (3, 8, 36), (4, 12, 46),
+                                        (5, 17, 28), (6, 21, 80) {
+                                          &:nth-of-type(#{$num}) {
+                                            width: $width + vw;
+                                            animation: img_animation_res 25s linear $delay + s infinite;
+                                          }
+
+
+
+            }
+          }
         }
 
 
+
+        @media screen and (max-width: 580px) {
+          display: flex;
+          flex-direction: column;
+          height: 50vw;
+        }
+
     }
 
-
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     div.empty_space {
       height: 20vw;
     }
