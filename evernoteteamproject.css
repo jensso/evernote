@@ -999,59 +999,6 @@ body section.animation button {
   background: white;
 }
 
-body section.animation button:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-body section.animation button:nth-of-type(1):focus {
-  outline: none;
-}
-
-body section.animation button:nth-of-type(1):focus ~ p:nth-of-type(1) {
-  opacity: 1;
-}
-
-body section.animation button:nth-of-type(2):focus {
-  outline: none;
-}
-
-body section.animation button:nth-of-type(2):focus ~ p:nth-of-type(2) {
-  opacity: 1;
-}
-
-body section.animation button:nth-of-type(3):focus {
-  outline: none;
-}
-
-body section.animation button:nth-of-type(3):focus ~ p:nth-of-type(3) {
-  opacity: 1;
-}
-
-body section.animation button:nth-of-type(4):focus {
-  outline: none;
-}
-
-body section.animation button:nth-of-type(4):focus ~ p:nth-of-type(4) {
-  opacity: 1;
-}
-
-body section.animation button:nth-of-type(5):focus {
-  outline: none;
-}
-
-body section.animation button:nth-of-type(5):focus ~ p:nth-of-type(5) {
-  opacity: 1;
-}
-
-body section.animation button:nth-of-type(6):focus {
-  outline: none;
-}
-
-body section.animation button:nth-of-type(6):focus ~ p:nth-of-type(6) {
-  opacity: 1;
-}
-
 @media screen and (max-width: 580px) {
   body section.animation button {
     height: auto;

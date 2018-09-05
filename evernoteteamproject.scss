@@ -858,20 +858,23 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
           opacity: 0.3;
           background: white;
 
-          &:hover {
-            opacity: 1;
-            cursor: pointer;
-          }
+          // &:hover {
+          //
+          //   @media screen and (min-width: 580px) {
+          //     opacity: 1;
+          //     cursor: pointer;
+          //   }
+          // }
 
-          @for $num from 1 through 6 {
-            &:nth-of-type(#{$num}):focus {
-              outline: none;
-
-              ~ p:nth-of-type(#{$num}) {
-                opacity: 1;
-              }
-            }
-          }
+          // @for $num from 1 through 6 {
+          //   &:nth-of-type(#{$num}):focus {
+          //     outline: none;
+          //
+          //     ~ p:nth-of-type(#{$num}) {
+          //       opacity: 1;
+          //     }
+          //   }
+          // }
 
 
           @media screen and (max-width: 580px) {
